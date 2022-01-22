@@ -1,0 +1,97 @@
+body{
+    background-color: cornsilk;
+    width: 1920px;
+}
+.wrapper{
+    border: 3px solid black;
+    background-color: aquamarine;
+    width: 1380px;
+    margin: auto;
+}
+.wrapper h1{
+    text-align: center;
+}
+header{
+    border: 3px solid slategrey;
+    background-color: aliceblue;
+    width: 1374px;
+    margin: auto;
+}
+h1{
+    background-color: white;
+}
+.as_left{
+    float: left;
+    margin-top: 10px;
+    border: 3px solid thistle;
+    background-color: aliceblue;
+    width: 300px;
+    height: 1000px;
+}
+a:hover+.as_right{
+    background-color: aqua;
+}
+.as_right{
+    float: left;
+    margin-top: 10px;
+    width: 300px;
+    height: 1000px;
+    border: 3px solid teal;
+    background-color: aliceblue;
+}
+.as_right article{
+    width: 250px;
+    height: 480px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+main{
+    float: left;
+    margin: auto;
+    border: 3px solid steelblue;
+    background-color: aliceblue;
+    width: 742px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+main h2{
+    text-align: center;
+}
+section{
+    border: 3px solid silver;
+    background-color: aliceblue;
+    float: left;
+    width: 716px;
+    margin: auto;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+section h3{
+    text-align: center;
+}
+main article{
+    border: 3px solid sienna;
+    background-color: aquamarine;
+    width: 325px;
+    height: 520px;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+main article img{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+.news{
+    border: 3px solid seagreen;
+    background-color: cadetblue;
+}
+footer{
+    clear: both;
+    border: 3px solid royalblue;
+    background-color: paleturquoise;
+}

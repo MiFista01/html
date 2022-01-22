@@ -1,0 +1,153 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(../img/back_sites/back_italia.png);
+}
+
+
+/*for от слова foreground чтобы было понятно что кнопки вверх, в низ и домик были независимыми от самого экрана*/
+.for{
+    position: fixed;
+    right: 1px;
+    width: 5%;
+}
+
+/*navigator здесь три тега "a" выравниваются по центру так что они при масштабировании не изменяют положение */
+.navigator{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+.navigator a{
+    font-size: 20pt;
+    color: black;
+    text-decoration: unset;
+    font-weight: bold;
+    border-radius: 20%;
+    padding: 1%;
+    
+}
+.navigator .italia:hover{
+    box-shadow: 0 0 40px rgb(33, 194, 1);/*тёмнозелёный*/
+    transition: 0.5s;
+}
+.navigator .canada:hover{
+    box-shadow: 0 0 40px rgb(184, 0, 0);/*тёмнокрасный*/
+    transition: 0.5s;
+}
+.navigator .islandia:hover{
+    box-shadow: 0 0 40px rgb(1, 4, 194);/*тёмносиний*/
+    transition: 0.5s;
+}
+.navigator .greec:hover{
+    box-shadow: 0 0 40px rgb(1, 194, 178);/*тёмный голубой*/
+    transition: 0.5s;
+}
+h1{
+    text-align: center;
+    font-size: 26pt;
+}
+
+.block h2{
+    width: 80%;
+    font-size: 20pt;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    margin: auto;
+    background-color:beige ;
+    border-radius: 50% 50% 0% 0%;
+    box-shadow: 0px 10px 10px black,10px 10px 10px black, -10px 10px 10px black;
+}
+.block h3{
+    width: 80%;
+    font-size: 18pt;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    margin: auto;
+    background-color:beige ;
+    border-radius: 50% 50% 0% 0%;
+    margin-top: 1%;
+    box-shadow: 0px 10px 10px black,10px 10px 10px black, -10px 10px 10px black;
+}
+.block p{
+    width: 80%;
+    font-size: 15pt;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    margin: auto;
+    background-color:beige ;
+    padding-bottom: 2%;
+    box-shadow: 0px 10px 10px black,10px 10px 10px black, -10px 10px 10px black;
+}
+.block .link{
+    padding-top: 2%;
+}
+.block .link a{
+    margin-left: 5%;
+    text-decoration: unset;
+    color: black;
+    font-size: 15pt;
+    padding: 1%;
+    border-radius: 50%;
+}
+.block .link a:hover{
+    box-shadow: 0 0 70px rgb(33, 194, 1);/*тёмнозелёный*/
+    transition-duration: 0.5s;
+}
+.block .photo{
+    width: 80%;
+    background: none;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    background-color:beige ;
+    padding-bottom: 2%;
+    border-radius: 0% 0% 20% 20%;
+    
+}
+.block .photo img{
+    border-radius: 50px;
+    box-shadow: 0 0 10px black;
+    margin-top: 1%;
+    width: 50%;
+}
+.food{
+    text-align: center;
+}
+.food p{
+    padding: 2%;
+    width: 40%;
+    
+}
+.food p img{
+    width: 70%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+}
+
+.dost{
+    text-align: center;
+}
+.unit h4{
+    font-size: 14pt;
+    background-color: beige;
+    margin: auto;
+    width: 90%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    box-shadow: 0px 10px 10px black,10px 10px 10px black, -10px 10px 10px black;
+}
+.unit p{
+    text-align: justify;
+    padding-bottom: 2%;
+}
+.unit .img_dost{
+    text-align: center;
+}
+.unit .img_dost img{
+    width: 30%;
+}

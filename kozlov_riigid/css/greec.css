@@ -1,0 +1,135 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(../img/back_sites/back_greec.png);
+}
+h1{
+    text-align: center;
+    font-size: 26pt;
+}
+h2{
+    margin-left: 2%;
+    font-size: 20pt;
+}
+h3{
+    margin-left: 2%;
+    font-size: 16pt;
+}
+p{
+    margin-left: 2%;
+    width: 96%;
+    font-size: 14pt;
+}
+
+/*for от слова foreground чтобы было понятно что кнопки вверх, в низ и домик были независимыми от самого экрана*/
+.for{
+    position: fixed;
+    right: 1px;
+    width: 5%;
+}
+/*navigator здесь три тега "a" выравниваются по центру так что они при масштабировании не изменяют положение */
+.navigator{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 30%;
+    margin-right: 30%;
+    
+}
+.navigator a{
+    font-size: 18pt;
+    color: black;
+    text-decoration: unset;
+    font-weight: bold;
+    border-radius: 20%;
+    padding: 1%;
+}
+.navigator .italia:hover{
+    box-shadow: 0 0 40px rgb(33, 194, 1);/*тёмнозелёный*/
+    transition: 0.5s;
+}
+.navigator .canada:hover{
+    box-shadow: 0 0 40px rgb(184, 0, 0);/*тёмнокрасный*/
+    transition: 0.5s;
+}
+.navigator .islandia:hover{
+    box-shadow: 0 0 40px rgb(1, 4, 194);/*тёмносиний*/
+    transition: 0.5s;
+}
+.navigator .greec:hover{
+    box-shadow: 0 0 40px rgb(1, 194, 178);/*тёмный голубой*/
+    transition: 0.5s;
+}
+/*back отдельный блок для выравнивания и в дальнейшем работа с ним*/
+.back{
+    margin:auto;
+    width: 90%;
+}
+/*block предназначен для изменения визуала отдельных частей страницы отличные темой*/
+.block {
+    background-color:beige ;
+    border-radius: 5%;
+    box-shadow: 0 0 100px black;
+    padding: 1%;
+    margin-bottom: 1%;
+    text-align: justify;
+}
+.block h2{
+    margin-left: 5%;
+}
+.block .photo{
+    text-align: center;
+}
+.block .photo img{
+    width: 40%;
+    box-shadow: 0 0 10px black;
+}
+/*food нужен для обработки визуала трёх картинок в теме еда*/
+.food{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.food img{
+    border-radius: 100px;
+    width: 32%;
+    margin: 2% 0% 2% 0%;
+    box-shadow: 0 0 10px black;
+}
+/*dost предназнаяен для разделения достопримечательностей на отдельные группы чтобы все не были в одной линии используя display:flex;*/
+.dost{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1%;
+}
+/*unit нужен для работы с каждой темой о достопримечательностью*/
+.unit{
+    padding: 1%;
+    border-radius: 5%;
+    width: 46%;
+    text-align: justify;
+    box-shadow: 0 0 15px black;
+}
+.unit h4{
+    text-align: center;
+    font-size: 15pt;
+}
+/*img_dost нужен для того чтоб в unit отцентровать картинку*/
+.img_dost{
+    text-align: center;
+    box-shadow: 0 0 20px black;
+    width: 60%;
+    height: 40%;
+    margin: auto;
+}
+.img_dost img{
+    width: 100%;
+    height: 100%;
+}
+p::selection{
+    background-color: rgb(1, 194, 178);/*тёмный голубой*/
+}

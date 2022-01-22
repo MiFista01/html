@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(182, 245, 224);
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20pt;
+    color: rgb(37, 143, 42);
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 15pt;
+    border: 5px dashed rgb(37, 143, 42);
+    background-color: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13pt;
+    color: black;
+    text-align: justify;
+    background-color: rgb(255, 248, 225);
+    margin: 10px 100px;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16pt;
+    color: rgb(37, 143, 42);
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 15pt;
+    border: 5px dashed rgb(37, 143, 42);
+    background-color: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+ul{
+    background-color: rgb(255, 248, 225);
+    color: rgb(108, 168, 111);
+    font-weight: bold;
+    margin: 10px 100px;
+}
+
+ol{
+    background-color: rgb(55, 94, 57);
+    color: rgb(193, 250, 196);
+    margin: 10px 100px;
+}
+
+h2 span{
+    color: rgb(4, 102, 9);
+    font-weight: bold;
+}
+
+p span{
+    color: rgb(1, 48, 3);
+    font-weight: bold;
+}
+
+.img1 img{
+    width: 400px;
+}
+.img1{
+    text-align: center;
+    background-color: rgb(182, 245, 224);
+}
+
+.img2 img{
+    width: 400px;
+    margin: 5 5;
+    
+}
+
+.img2{
+    text-align: center;
+    background-color: rgb(55, 94, 57);
+    box-shadow: 5px 5px 20px rgb(37, 37, 37);
+}

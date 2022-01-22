@@ -1,0 +1,78 @@
+.wrapper{
+    width: 1800px;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    margin: auto;
+}
+.wrapper h1{
+    text-align: center;
+}
+header{
+    position: sticky;
+    top: 0px;
+    text-align: center;
+}
+main{
+    width: 1700px;
+    background-color: cornsilk;
+    border: 2px solid cadetblue;
+    margin: auto;
+    overflow: visible;
+}
+main h2{
+    text-align: center;
+}
+main p{
+    text-align: justify;
+}
+section{
+    width: 1600px;
+    height: 10000px;
+    background-color: azure;
+    border: 2px solid teal;
+    margin: auto;
+    overflow: visible;
+    position: static;
+    
+}
+
+.art1{
+    width: 400px;
+    height: 400px;
+    background-color: aliceblue;
+    border: 2px solid thistle;
+    padding: 0px 20px;
+    position: sticky;
+    top: 0px;
+}
+.art2{
+    width: 500px;
+    height: 300px;
+    background-color: aquamarine;
+    border: 2px solid steelblue;
+    padding: 0px 20px;
+    top: 0px;
+}
+.art3{
+    width: 600px;
+    height: 200px;
+    background-color: beige;
+    border: 2px solid blueviolet;
+    padding: 0px 20px;
+}
+.art4{
+    width: 700px;
+    height: 200px;
+    background-color: burlywood;
+    border: 2px solid slategray;
+    padding: 0px 20px;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
+.art4:hover{
+    background-color: blueviolet
+}
+footer{
+    height: 500px;
+}
