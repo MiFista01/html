@@ -241,6 +241,28 @@ footer{
     justify-content: center;
     flex-wrap: wrap;
 }
+.ads{
+    position: fixed;
+    width: 1380px;
+    height: 200px;
+    overflow: visible;
+}
+.ads img{
+    height: 50px;
+}
+.ads_image{
+    overflow: visible;
+    height: 150px;
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 10%;
+}
+.ads_image p{
+    height: 100%;
+}
+.ads_image img{
+    height: 100%;
+}
 /*-----------------------------------------------страница с инфой про bootstrap------------------------------*/
 
 
