@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     box-sizing: border-box;
 }
@@ -9,6 +12,9 @@ body{
 }
 main{
     float: left;
+}
+section{
+    overflow: hidden;
 }
 .indexPage header{
     display: flex;
@@ -56,7 +62,13 @@ main{
     width: 125px;
     height: 150px;
     position: sticky;
-    top: 0px;
+    top: 11px;
+}
+.left ul{
+    list-style-type: none;
+}
+.left a{
+    text-decoration: unset;
 }
 .right{
     float: left;
@@ -175,8 +187,8 @@ footer{
 .htmlpage .wrapper, .cssPage .wrapper, .bootPage .wrapper, .andularPage .wrapper{
     background-color: whitesmoke;
     width: 1380px;
-    position: static;
     overflow: visible;
+    margin-top: -8px;
 }
 .htmlpage header, .cssPage header, .bootPage header, .andularPage header{
     float: left;
@@ -190,6 +202,20 @@ footer{
     padding-right: 20px;
     text-align: justify;
 }
+.left_aside{
+    width: 125px;
+    float: left;
+    position: sticky;
+    top: 11px;
+    overflow: hidden;
+}
+
+.up_down{
+    width: 100px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 5px;
+}
 /*-----------------------------------------------основное строение страниц----------------------------------*/
 
 
@@ -201,6 +227,32 @@ footer{
     justify-content: center;
     flex-wrap: wrap;
 }
+.htmlpage header{
+    background: linear-gradient(90deg,orange ,white,white,orange);
+}
+.htmlpage main{
+    margin-top: 10px;
+}
+.htmlpage section{
+    background-color: aliceblue;
+    box-shadow: 0px 0px 10px black;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+.htmlpage .left{
+    box-shadow: 0px 0px 10px orange;
+    border-radius: 0px 90px;
+    margin-left: 11px;
+    margin-top: 11px;
+    font-size: 15px;
+}
+.htmlpage aside ul{
+    margin-top: 25px;
+    margin-left: -5px;
+}
 /*-----------------------------------------------страница с инфой про хтмл----------------------------------*/
 
 
@@ -211,6 +263,30 @@ footer{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+}
+.cssPage header{
+    background: linear-gradient(90deg, cornflowerblue,white,white,cornflowerblue);
+}
+.cssPage section{
+    margin-top: 30px;
+    background-color: rgb(29, 29, 29);
+    padding: 5px 30px;
+    margin-bottom: 30px;
+    transition-duration: 0.5s;
+    border-radius: 70px;
+    box-shadow: 0px 0px 20px white;
+}
+.cssPage section img{
+    transition-duration: 1s;
+    border-radius: 50px;
+}
+.cssPage section:hover{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px darkblue;
+}
+.cssPage section:hover img{
+    border-radius: 10px;
 }
 .photos{
     width: 1200px;
@@ -241,27 +317,8 @@ footer{
     justify-content: center;
     flex-wrap: wrap;
 }
-.ads{
-    position: fixed;
-    width: 1380px;
-    height: 200px;
-    overflow: visible;
-}
-.ads img{
-    height: 50px;
-}
-.ads_image{
-    overflow: visible;
-    height: 150px;
-    background-color: antiquewhite;
-    text-align: center;
-    padding: 10%;
-}
-.ads_image p{
-    height: 100%;
-}
-.ads_image img{
-    height: 100%;
+.bootPage header{
+    background: linear-gradient(90deg, darkmagenta,white,white,darkmagenta);
 }
 /*-----------------------------------------------страница с инфой про bootstrap------------------------------*/
 
@@ -273,5 +330,8 @@ footer{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+}
+.andularPage header{
+    background: linear-gradient(90deg, crimson,white,white,crimson);
 }
 /*-----------------------------------------------страница с инфой про bootstrap------------------------------*/
