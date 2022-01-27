@@ -257,7 +257,8 @@ footer{
     font-size: 15px;
 }
 .htmlpage aside ul{
-    margin-top: 25px;
+    margin-top: 15px;
+    padding-bottom: 15px;
     margin-left: -5px;
 }
 /*-----------------------------------------------страница с инфой про хтмл----------------------------------*/
