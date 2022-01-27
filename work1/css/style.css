@@ -185,7 +185,6 @@ footer{
 /*-----------------------------------------------основное строение страниц----------------------------------*/
 .htmlpage .wrapper, .cssPage .wrapper, .bootPage .wrapper, .andularPage .wrapper{
     background-color: whitesmoke;
-    width: 1380px;
     overflow: visible;
     margin-top: -8px;
 }
@@ -300,6 +299,7 @@ footer{
 .cssPage section:hover img{
     border-radius: 10px;
 }
+
 .cssPage .left_aside .up_down{
     background-color: aliceblue;
     width: 100%;
@@ -354,68 +354,82 @@ footer{
 .bootPage header{
     background: linear-gradient(90deg, darkmagenta,white,white,darkmagenta);
 }
+
+.bootPage .left:hover{
+    background-image: url(../img/pages/boot/background.PNG);
+}
+
+
 .ads{
     position: fixed;
-    width: 1380px;
-    height: 250px;
+    width: 1340px;
+    height: 0px;
     bottom: 0px;
-    display: block;
+    text-align: left;
+    transition-duration: 0.1s;
+}
+.ads img{
+    position: relative;
+    top: -60px;
+
+}
+.ads:hover{
+    height: 325px;
+    transition-duration: 0.1s;
+}
+.ads:hover .ads_inf{
+    margin-top: -60px;
+    transform: scaleY(1);
+    transform-origin: 0 0;
+    height: 95%;
+    transition-duration: 0.1s;
 }
 .ads_side_left{
-    height: 1000px;
     width: 200px;
+    height: 0px;
     left: 0px;
-    display: block;
+    transition-duration: 0.1s;
 }
-.ads_side_left .imgs{
-    height: 95%;
-    margin-top: 5%;
+.ads_side_left:hover{
+    height: 500px;
+    transition-duration: 0.1s;
 }
-.ads_side_left a:active .ads_inf{
+.ads_side_left:hover .ads_inf{
     transform: scaleY(1);
     transform-origin: 1 1;
     height: 90%;
-    transition-duration: 0.5s;
+    transition-duration: 0.1s;
 }
+
 .ads_side_right{
-    height: 1000px;
     width: 200px;
-    right: -200px;
-    display: block;
+    height: 0px;
+    left: 0px;
+    transition-duration: 0.1s;
 }
-.ads_side_right .imgs{
-    height: 95%;
-    margin-top: 5%;
+.ads_side_right:hover{
+    height: 500px;
+    transition-duration: 0.1s;
 }
-.ads_side_right a:active .ads_inf{
+.ads_side_right:hover .ads_inf{
     transform: scaleY(1);
     transform-origin: 1 1;
     height: 90%;
-    transition-duration: 0.5s;
+    transition-duration: 0.1s;
 }
 .ads_inf{
+    float: left;
     background-color: antiquewhite;
     transform: scaleY(0);
     transform-origin: 0 0;
-    transition-duration: 20s;
+    transition-duration: 0.1s;
     height: 0px;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+    text-align: left;
+    padding: 20px;
+    margin-top: -65px;
 }
-.ads_inf img{
-    width: 60%;
-    height: 90%;
-    display: block;
-}
-.ads a:active .ads_inf{
-    transform: scaleY(1);
-    transform-origin: 1 1;
-    height: 230px;
-    transition-duration: 0.5s;
-}
+
 
 /*-----------------------------------------------страница с инфой про bootstrap------------------------------*/
 
@@ -431,4 +445,27 @@ footer{
 .andularPage header{
     background: linear-gradient(90deg, crimson,white,white,crimson);
 }
+.andularPage .text{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition-duration: 0.1s;
+    border-radius: 10px;
+    padding: 0px 20px;
+}
+.andularPage .text:hover{
+    font-size: 25px;
+    border: 2px solid grey;
+}
+.andularPage .left{
+    transition-duration: 0.1s;
+}
+.andularPage .left ul{
+    margin-left: -30px;
+}
+.andularPage .left:hover{
+    font-size: 20px;
+    border: 2px solid grey;
+    border-radius: 20px;
+}
+
 /*-----------------------------------------------страница с инфой про bootstrap------------------------------*/

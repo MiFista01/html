@@ -10,18 +10,24 @@
 </head>
 <body class="andularPage">
     <div class="wrapper">
-        <header><h1>AngularJS</h1></header>
-        <aside class="left">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="htmlPage.html">HTML</a></li>
-                <li><a href="cssPage.html">CSS</a></li>
-                <li><a href="bootstrapPage.html">Bootstrap</a></li>
-                <li><a href="angularPage.html">AngularJS</a></li>
-            </ul>
+        <header id="up"><h1>AngularJS</h1></header>
+        <aside class="left_aside">
+            <div class="left">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="htmlPage.html">HTML</a></li>
+                    <li><a href="cssPage.html">CSS</a></li>
+                    <li><a href="bootstrapPage.html">Bootstrap</a></li>
+                    <li><a href="angularPage.html">AngularJS</a></li>
+                </ul>
+            </div>
+            <div class="up_down">
+                <a href="#up"><img src="../img/up.png" alt="aasa"></a>
+                <a href="#down"><img src="../img/down.png" alt=""></a>
+            </div>
         </aside>
         <main>
-            <section>
+            <section class="text">
                 <h2>Введение</h2>
                 <p>
                     Angular — фреймворк для JavaScript. Библиотека помогает создавать веб-приложения — 
@@ -41,7 +47,7 @@
                     , Upwork.
                 </p>
             </section>
-            <section>
+            <section class="text">
                 <h2>Цели разработки</h2>
                 <ul>
                     <li><p>
@@ -66,7 +72,7 @@
                     Следовательно, уменьшается нагрузка на сервер и веб-приложение становится легче.
                 </p>
             </section>
-            <section>
+            <section class="text">
                 <h2>
                     Популярные встроенные Angular-директивы
                 </h2>
@@ -74,50 +80,50 @@
                     С помощью директив AngularJS можно создавать пользовательские HTML-теги и атрибуты, 
                     чтобы добавить поведение некоторым элементам.
                 </p>
-                <div class="text">
+                <div>
                     <p><b>ng-bind</b></p>
                     <p>Объявляет элемент корневым для приложения.</p>
                 </div>
-                <div class="text">
+                <div>
                     <p><b>ng-bind</b></p>
                     <p>Автоматически заменяет текст HTML-элемента на значение переданного выражения.</p>
                 </div>
-                <div class="text">
+                <div>
                     <p><b>ng-model</b></p>
                     <p>То же, что и ng-bind, только обеспечивает двустороннее связывание данных. 
                         Изменится содержимое элемента — ангуляр изменит и значение модели. Изменится 
                         значение модели — ангуляр изменит текст внутри элемента.</p>
                 </div>
-                <div class="text">
+                <div>
                     <p><b>ng-class</b></p>
                     <p>Определяет классы для динамической загрузки.</p>
                 </div>
-                <div class="text">
+                <div>
                     <p><b>ng-controller</b></p>
                     <p>Определяет JavaScript-контроллер для вычисления HTML-выражений в соответствии с MVC.</p>
                 </div>
-                <div class="text">
+                <div>
                     <p><b>ng-repeat</b></p>
                     <p>Создает экземпляр DOM для каждого элемента из коллекции.</p>
                 </div>
-                <div class="text">
+                <div>
                     <p><b></b></p>
                     <p></p>
                 </div>
-                <div class="text">
+                <div>
                     <p><b>ng-show и ng-hide</b></p>
                     <p>Показывает или скрывает элемент, в зависимости от значения логического выражения.</p>
                 </div>
-                <div class="text">
+                <div>
                     <p><b>ng-switch</b></p>
                     <p>Создаёт экземпляр шаблона из множества вариантов, в зависимости от значения выражения.</p>
                 </div>
-                <div class="text">
+                <div>
                     <p><b>ng-view</b></p>
                     <p>Базовая директива, отвечает за обработку маршрутов, которые принимают JSON перед 
                         отображением шаблонов, управляемых указанными контроллерами.</p>
                 </div>
-                <div class="text">
+                <div>
                     <p><b>ng-if</b></p>
                     <p>Удаляет или создаёт часть DOM-дерева в зависимости от значения выражения. Если значение выражения
                         , назначенного ngIf, равно false, элемент удаляется из DOM, иначе — вновь клонированный элемент 
@@ -127,7 +133,7 @@
                     Также существует возможность создавать настраиваемые директивы, используя в том числе шаблоны в теге script.
                 </p>
             </section>
-            <section>
+            <section class="text">
                 <h2>Для чего нужен Angular</h2>
                 <p>
                     Angular больше подходит для крупных проектов с жесткой структурой. В нем есть 
@@ -151,7 +157,7 @@
                     на Angular.
                 </p>
             </section>
-            <section>
+            <section class="text">
                 <h2>Где используется Angular</h2>
                 <p>
                     Как мы уже писали выше, по мнению многих веб-разработчиков, стартап проекты лучше 
@@ -173,7 +179,7 @@
                     проекты и так далее.
                 </p>
             </section>
-            <section>
+            <section class="text">
                 <h2>Двустороннее связывание данных</h2>
                 <p>
                     Двустороннее связывание данных в AngularJS является наиболее примечательной 
@@ -186,14 +192,14 @@
                     приложений.
                 </p>
             </section>
-            <section>
+            <section class="text">
                 <h2>Плагин для Chrome</h2>
                 В июле 2012 года команда Angular выпустила плагин для браузера Google Chrome под названием 
                 Batarang, который облегчает отладку веб-приложений, построенных на Angular. Расширение 
                 позволяет легко обнаруживать узкие места и предлагает графический интерфейс для отладки 
                 приложений.
             </section>
-            <section>
+            <section class="text">
                 <h2>Сравнение с Backbone.js</h2>
                 <p>
                     Похожими возможностями обладает Backbone.js — JavaScript-библиотека, основанная на 
@@ -205,7 +211,7 @@
                      Ашкенасом, который известен также как создатель CoffeeScript.
                 </p>
             </section>
-            <section>
+            <section class="text" id="down">
                 <h2>Связывание данных</h2>
                 <p>
                     Наиболее характерной особенностью, которая разделяет библиотеки, является способ 
