@@ -131,6 +131,7 @@ section{
     top: -25px;
     height: 20px;
     margin-bottom: -30px;
+    font-weight: bold;
 }
 .csss{
     font-size: 20px;
@@ -140,6 +141,7 @@ section{
     top: -25px;
     height: 20px;
     margin-bottom: -30px;
+    font-weight: bold;
 }
 .boot{
     font-size: 20px;
@@ -149,6 +151,7 @@ section{
     top: -25px;
     height: 20px;
     margin-bottom: -30px;
+    font-weight: bold;
 }
 .angular{
     font-size: 20px;
@@ -158,6 +161,7 @@ section{
     top: -25px;
     height: 20px;
     margin-bottom: -30px;
+    font-weight: bold;
 }
 .ps{
     background-color:darkblue;
@@ -166,6 +170,7 @@ section{
     padding-left: 10px;
     padding-right: 10px;
     margin-bottom: 20px;
+    margin-top: 20px;
     text-align: justify;
 }
 .ps p{
