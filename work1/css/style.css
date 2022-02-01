@@ -217,11 +217,11 @@ footer{
 }
 
 .up_down{
-    width: 100px;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    width: 50px;
     float: left;
-    margin-top: 5px;
-    margin-left: 33%;
-    margin-right: 28%;
     border-radius: 20px;
     padding: 10px;
     display: flex;
@@ -324,9 +324,6 @@ footer{
     border-radius: 0px 0px 170px 170px;
     box-shadow: 0px 0px 50px blue;
 }
-.cssPage .up_down{
-    box-shadow: 0px 0px 20px aliceblue;
-}
 .photos{
     width: 1200px;
     float: left;
@@ -360,7 +357,13 @@ footer{
 .bootPage header{
     background: linear-gradient(90deg, darkmagenta,white,white,darkmagenta);
 }
-
+.bootPage section{
+    background-color: beige;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px;
+    border-radius: 100px;
+}
 .bootPage .left:hover{
     background-image: url(../img/pages/boot/background.PNG);
 }
@@ -408,6 +411,7 @@ footer{
 }
 
 .ads_side_right{
+    
     width: 200px;
     height: 0px;
     left: 0px;
@@ -457,11 +461,19 @@ footer{
     transition-duration: 0.1s;
     border-radius: 10px;
     padding: 0px 20px;
+    background-color: azure;
 }
 .andularPage .text:hover{
     font-size: 25px;
     border: 2px solid grey;
 }
+.andularPage .text h2{
+    background-color: ghostwhite;
+    text-align: center;
+    width: 500px;
+    margin: auto;
+}
+
 .andularPage .left{
     transition-duration: 0.1s;
 }
