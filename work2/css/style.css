@@ -4,10 +4,14 @@ html{
 body{
     background-image: url(../img/body.png);
     font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .wrapper{
-    margin: auto;
     width: 1380px;
+    
 }
 header{
     overflow: hidden;
