@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Анкета</h1>
+        </header>
+        <main>
+            <form action="index.php" name="forma1">
+            <div class="base">
+                <h2>Контактные данные</h2>
+                    <div class="unit">
+                        <h3>Имя</h3>
+                        <input type="text" name="name" placeholder="Имя">
+                    </div>
+                    <div class="unit">
+                        <h3>Фамилия</h3>
+                        <input type="text" name="surname" placeholder="Фамилия">
+                    </div>
+                    <div class="unit">
+                        <h3>Почта</h3>
+                        <input type="email" name="post" placeholder="Почта">
+                    </div>
+                    <div class="unit">
+                        <h3>Телефон</h3>
+                        <input type="tel" name="phone" placeholder="Телефон">
+                    </div>
+            </div>
+            <div class="base">
+                <h2>Персональные данные</h2>
+                    <div class="unit mod">
+                        <h3>Ваш пол:</h3>
+                        <div class="radio">
+                            <div>
+                                <input type="radio" name="sex" class="rad"><label>Мужской</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="sex" ><label>Женский</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="unit mod text_age">
+                        <h3>Возраст:</h3>
+                        <input type="number" min="0" max="150" value="15">
+                    </div>
+                    <div class="unit mod color">
+                        <h3>Ваш любимый цвет?</h3>
+                        <input type="color" name="color">
+                    </div>
+                    <div class="unit mod">
+                        <h3>Ваша любимая кухня</h3>
+                        <select name="cook" size="1">
+                            <option selected disabled>Выбор кухни</option>
+                            <option value="italia">Итальянскся кухня</option>
+                            <option value="china">Китайская кухня</option>
+                            <option value="turk">Турецкая кухня</option>
+                            <option value="canada">Канадская кухня</option>
+                            <option value="eesti">Эстонская кухня</option>
+                            <option value="finnish">Финская кухня</option>
+                            <option value="japan">Японксая кухня</option>
+                            <option value="german">Германская кухня</option>
+                            <option value="greec">Греческая кухня</option>
+                        </select>
+                    </div>
+                    <div class="unit mod">
+                        <h3>Какие блюда хотите увидеть</h3>
+                    </div>
+                    <div class="unit mod">
+                        <textarea name="food" cols="80" rows="15" placeholder="Напишите сюда то что хотите увидеть"></textarea>
+                    </div>
+            </div>
+            <div class="base">
+                <h2>Оценка нашего заведения</h2>
+                    <div class="unit mod text_date">
+                        <h3>Дата и время посещения</h3>
+                        <input type="datetime-local" name="date">
+                    </div>
+                    <div class="unit mod">
+                        <h3>Почему вы выбрали наше заведение?</h3>
+                    </div>
+                    <div class="unit mod radio">
+                        <input type="radio" name="cause"><label>не далеко от дома/работы</label>
+                    </div>
+                    <div class="unit mod radio">
+                        <input type="radio" name="cause"><label>увидел рекламу</label>
+                    </div>
+                    <div class="unit mod radio">
+                        <input type="radio" name="cause"><label>посоветовали</label>
+                    </div>
+                    <div class="unit mod radio">
+                        <input type="radio" name="cause"><label>соотношение цены и качества</label>
+                    </div>
+                    <div class="unit mod">
+                        <h3>Как вы оцените наше заведение(от 1 до 5)</h3>
+                    </div>
+                    <div class="scroll">
+                        <div class="unit mod">
+                            <input type="range" list="marks" min="1" max="5" step="1">
+                            <datalist id="marks">
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                <option value="3"></option>
+                                <option value="4"></option>
+                                <option value="5"></option>
+                            </datalist>
+                        </div>
+                        <div class="number_space">
+                            <p>1</p>
+                            <p>2</p>
+                            <p>3</p>
+                            <p>4</p>
+                            <p>5</p>
+                        </div>
+                    </div>
+                    <div class="unit mod">
+                        <h3>Как вы оцените наше заведение(от 1 до 10)</h3>
+                    </div>
+                    <div class="scroll">
+                        <div class="unit mod">
+                            <input type="range" list="marks2" min="1" max="10" step="1" value="5">
+                            <datalist id="marks2">
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                <option value="3"></option>
+                                <option value="4"></option>
+                                <option value="5"></option>
+                                <option value="6"></option>
+                                <option value="7"></option>
+                                <option value="8"></option>
+                                <option value="9"></option>
+                                <option value="10"></option>
+                            </datalist>
+                        </div>
+                        <div class="number_space">
+                            <p>1</p>
+                            <p>2</p>
+                            <p>3</p>
+                            <p>4</p>
+                            <p>5</p>
+                            <p>6</p>
+                            <p>7</p>
+                            <p>8</p>
+                            <p>9</p>
+                            <p>10</p>
+                        </div>
+                    </div>
+                    <div class="unit mod">
+                        <h3>Вы будете рекомендовать наше заведение?</h3>
+                    </div>
+                    <div class="radio radio_mod">
+                        <div>
+                            <input type="radio" name="answer" class="rad"><label>Да</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="answer" class="rad"><label>Нет</label>
+                        </div>
+                    </div>
+            </div>
+            <div class="base">
+                <h2>Дата заполнения</h2>
+                    <div class="unit mod">
+                        <input type="date" name="date_now" >
+                    </div>
+            </div>
+            <div class="byttons">
+                <input type="submit" value="Отправить">
+                <input type="reset" value="Стереть">
+            </div>
+        </form>
+        </main>
+    </div>
+</body>
+</html>

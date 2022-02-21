@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="index.php">
+            <header>
+                <h1>Регистрация подписчика</h1>
+            </header>
+            <div class="unit">
+                <label for="name">Как вас зовут</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="unit">
+                <label for="country">Страна проживания</label>
+                <input type="text" id="country" name="country">
+            </div>
+            <div class="unit">
+                <label for="email">Адресс электронной почты</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="unit mod">
+                <label for="sex1"> Ваш пол:</label>
+                <input type="radio" name="sex" id="sex1"><label for="sex1">Мужской</label>
+                <input type="radio" name="sex" id="sex2"><label for="sex2">Женский</label>
+            </div>
+            <div class="unit mod age">
+                <label for="age">Ваш возраст</label>
+                <input type="number" id="age" name="age" min="15" max="150" value="15">
+            </div>
+            <div class="unit mod age">
+                <label for="answer">Откуда о нас узнали?</label>
+                <select name="variants" id="answer">
+                    <option selected disabled>- - - - - - </option>
+                    <option value="inet">Интернет</option>
+                    <option value="magazine">Печатное издание</option>
+                    <option value="familiar">Знакомые</option>
+                    <option value="TV">ТВ</option>
+                </select>
+            </div>
+            <div class="unit mod">
+                <label for="age">Дополнительная информация</label>
+            </div>
+            <div class="unit mod">
+                <textarea name="text" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="unit mod age">
+                <label for="date">Адресс электронной почты</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div class="byttons">
+                <input type="submit" value="Отправить">
+                <input type="reset" value="Стереть">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
