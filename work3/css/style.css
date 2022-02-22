@@ -2,141 +2,102 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-image: url(../img/back.jpg);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    background-image: url(../img/background.jpg);
     background-attachment: fixed;
 }
 .wrapper{
-    width: 1000px;
-    margin: 20px;
-    padding: 20px;
+    width: 1380px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(5, 5, 5);
+    color: whitesmoke;
+    box-shadow: 0px 0px 0px 80px rgba(0, 0, 0, 0.452),0px 0px 0px 50px rgba(0, 0, 0, 0.548),
+    0px 0px 0px 20px rgba(0, 0, 0, 0.801);
+    background-clip: padding-box;
+    margin: 80px;
+    border-radius: 30px;
 }
 header{
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Days One', sans-serif;
 }
-header h1{
-    font-size: 50px;
-    background-image: url(../img/background_base.jpg);
-    border: 5px solid black;
+header img{
+    width: auto;
+    height: 100px;
+    margin: 0px 50px;
 }
-form{
+main{
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 .base{
-    background-color: antiquewhite;
-    background-image: url(../img/background_base.jpg);
-    overflow: visible;
-    width: 90%;
-    padding: 5%;
-    margin: 40px 0px;
+    width: 45%;
     box-sizing: border-box;
-    border: 5px solid black;
+    padding: 0px 20px;
+    margin: 25px;
+    border: 5px solid whitesmoke;
+    box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.247);
+    background-clip: padding-box;
+    border-radius: 30px;
+    overflow: visible;
 }
-.base h2{
-    background-color: aquamarine;
-    position: relative;
-    font-size: 35px;
-    top: -100px;
-    border-radius: 15px;
-    border: 5px solid black;
-    padding: 5px;
+.base img{
     float: left;
-    margin-bottom: -90px;
-}
-.unit{
-    clear: both;
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.unit h3{
-    font-size: 25px;
-}
-.unit input{
-    height: 40px;
-    width: 70%;
-    margin-right: 50px;
-    margin-left: 20px;
-    font-size: 20px;
-    background-color: darkcyan;
-}
-.unit input::placeholder{
-    color: black;
-}
-.mod{
-    justify-content: start;
-}
-.unit select{
-    margin: 10px;
-    height: 30px;
-    border-radius: 5px;
-}
-.radio{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.radio input{
-    width: 20px;
-    height: 20px;  
     margin: 0px 10px;
-}
-.radio label{
-    font-size: 25px;
-}
-.radio_mod{
-    flex-direction: column;
-    align-items: baseline;
-}
-.text_age input{
-    width: 200px;
-    height: 30px;
-    border-radius: 10px;
-    text-align: center;
-}
-.color input{
-    width: 150px;
-}
-textarea{
-    resize: none;
-}
-.text_date input{
-    width: 400px;
-}
-.scroll{
     width: 50%;
 }
-.scroll input{
-    width: 100%;
-    margin: 0px;
-}
-.number_space{
+.mod{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: stretch;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
-.number_space p{
-    margin-top: -7px;
-}
-.byttons{
+.center{
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
-.byttons input{
-    width: 20%;
-    height: 30px;
-    margin: 0px 20px;
-    border-radius: 30px;
+.center img{
+    float: none;
+}
+.button{
+    overflow: hidden;
+    display: flex;
+    flex-shrink: unset;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.button a{
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    background-color: rgb(19, 19, 19);
+    border: 5px solid whitesmoke;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 100%;
+    transition-duration: 0.2s;
+}
+.button a:hover{
+    color: rgb(19, 19, 19);
+    border: 5px solid rgb(19, 19, 19);
+    background-color: whitesmoke;
+}
+.news{
+    width: 95%;
 }
