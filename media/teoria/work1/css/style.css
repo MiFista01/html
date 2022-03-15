@@ -2,14 +2,14 @@ body{
     font-family: Roboto;
 }
 .wrapper{
-    width: 75%;
+    width: 80%;
     background: #FFFFFF;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
     margin: auto;
-    transition-duration: 0.5;
+    transition-duration: 0.8s;
 }
 header{
     display: flex;
@@ -26,11 +26,12 @@ header p{
     font-size: 1.1vw;
     color: #2A7B7B;
     margin-right: 5%;
+    margin-top: 4%;
 }
 .aside_left{
     width: 10%;
     font-weight: bold;
-    font-size: 1.1vw;
+    font-size: 1.3vw;
     color: #2A7B7B;
     line-height: 0.8vh;
     margin-top: 3%;
@@ -41,11 +42,11 @@ main{
     justify-content: space-between;
     justify-items: center;
     flex-wrap: wrap;
-    width: 65%;
+    width: 60%;
 }
 main h2{
     font-weight: bold;
-    font-size: 1.4vw;
+    font-size: 1.5vw;
     color: #2A7B7B;
     text-align: center;
     width: 100%;
@@ -54,43 +55,67 @@ main article{
     width: 49%;
 }
 main article h3{
-    font-size: 1vw;
+    font-size: 1.2vw;
     text-align: center;
     background: #2A7B7B;
     padding: 2% 0px;
     color: whitesmoke;
 }
 main article img{
-    width: 12%;
+    width: 15%;
     float: left;
-    margin: 0px 2%;
+    margin: 0% 5% 1% 0%;
 }
 main article p{
-    font-size: 0.8vw;
-    line-height: 1.8vh;
+    font-size: 1vw;
+    line-height: 2.5vh;
+    text-align: justify;
+}
+.html{
+    color: orange;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+.css{
+    color: deepskyblue;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+.bootsrtap{
+    color:darkviolet;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+.angular{
+    color: crimson;
+    font-weight: bold;
+    font-size: 1.2vw;
 }
 .bottom{
     width: 100%;
-    font-size: 0.75vw;
+    font-size: 0.8vw;
     line-height: 2vh;
 }
 .aside_right{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     justify-items:left;
     flex-wrap: wrap;
-    width: 20%;
+    width: 25%;
     margin-top: 2%;
+    text-align: justify;
 }
+
 .aside_right h4{
-    font-size: 0.9vw;
+    font-size: 1.2vw;
     color: #2A7B7B;
     text-align: center;
     width: 100%;
+    margin-bottom: -1%;
 }
 .aside_right h5{
-    font-size: 0.85vw;
+    font-size: 1.1vw;
     line-height: 1.8vh;
     background: #2A7B7B;
     padding: 3% 0px;
@@ -98,8 +123,10 @@ main article p{
     color: whitesmoke;
 }
 .aside_right p{
-    font-size: 0.8vw;
-    line-height: 1.8vh;
+    font-size: 1vw;
+    line-height: 2vh;
+    margin-top: -5%;
+    text-align: justify;
 }
 .aside_right a{
     font-size: 0.8vw;
@@ -114,9 +141,11 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     color: #2A7B7B;
     font-weight: bold;
-    font-size: 1.1vw;
+    font-size: 1.2vw;
+    text-align: center;
 }
 
 
@@ -125,12 +154,15 @@ footer{
 @media (min-width:1200px) and (max-width:1400px) { 
     .wrapper{
         width: 85%;
-        background-color: aquamarine;
+    }
+    header p{
+        font-size: 1.3vw;
     }
     .aside_left{
         width: 100%;
         text-align: center;
-        font-size: 1.3vw;
+        font-size: 1.4vw;
+        margin-top: -1%;
     }
     .aside_left ul{
         list-style: none;
@@ -142,46 +174,70 @@ footer{
         color: whitesmoke;
     }
     main{
-        width: 70%;
-        background-color: yellow;
+        width: 65%;
     }
     main h2{
-        font-size: 1.6vw;
+        font-size: 1.9vw;
     }
     main article h3{
-        font-size: 1.2vw;
+        font-size: 1.6vw;
+    }
+    main article img{
+        width: 20%;
+        margin: 0% 5% 2% 0%;
     }
     main article p{
-        font-size: 1.1vw;
-        line-height: 2vh;
+        font-size: 1.5vw;
+        line-height: 2.6vh;
+    }
+    .html{
+        font-size: 1.6vw;
+    }
+    .css{
+        font-size: 1.6vw;
+    }
+    .bootsrtap{
+        font-size: 1.6vw;
+    }
+    .angular{
+        font-size: 1.6vw;
     }
     .aside_right{
-        width: 25%;
+        width: 30%;
     }
     .aside_right h4{
-        font-size: 1.3vw;
+        font-size: 1.6vw;
     }
     .aside_right h5{
-        font-size: 1.2vw;
+        font-size: 1.4vw;
         line-height: 2vh;
     }
     .aside_right p{
-        font-size: 1.1vw;
-        line-height: 2vh;
+        font-size: 1.3vw;
+        line-height: 2.5vh;
     }
     .aside_right a{
-        font-size: 1.1vw;
+        font-size: 1.3vw;
+    }
+    footer{
+        font-size: 1.6vw;
     }
 }
 @media (min-width:1000px) and (max-width:1199px) { 
     .wrapper{
         width: 90%;
-        background-color: aqua;
+    }
+    header img{
+        width: 20%;
+    }
+    header p{
+        font-size: 1.5vw;
     }
     .aside_left{
         width: 100%;
         text-align: center;
-        font-size: 1.3vw;
+        font-size: 1.6vw;
+        margin-top: -1%;
     }
     .aside_left ul{
         list-style: none;
@@ -193,48 +249,73 @@ footer{
         color: whitesmoke;
     }
     main{
-        width: 70%;
-        background-color: yellow;
+        width: 65%;
+    }
+    main article{
+        width: 100%;
     }
     main h2{
-        font-size: 1.6vw;
+        font-size: 2.1vw;
     }
     main article h3{
-        font-size: 1.2vw;
+        font-size: 1.8vw;
+    }
+    main article img{
+        width: 20%;
+        margin: 0% 2% 8% 0%;
     }
     main article p{
-        font-size: 1.1vw;
-        line-height: 2vh;
+        font-size: 1.6vw;
+        line-height: 2.8vh;
+    }
+    .html{
+        font-size: 1.8vw;
+    }
+    .css{
+        font-size: 1.8vw;
+    }
+    .bootsrtap{
+        font-size: 1.8vw;
+    }
+    .angular{
+        font-size: 1.8vw;
     }
     .aside_right{
-        width: 25%;
+        width: 30%;
     }
     .aside_right h4{
-        font-size: 1.3vw;
+        font-size: 1.8vw;
     }
     .aside_right h5{
-        font-size: 1.2vw;
-        line-height: 2vh;
+        font-size: 1.6vw;
+        line-height: 2.2vh;
     }
     .aside_right p{
-        font-size: 1.1vw;
-        line-height: 2vh;
+        font-size: 1.5vw;
+        line-height: 2.7vh;
     }
     .aside_right a{
-        font-size: 1.1vw;
+        font-size: 1.5vw;
+    }
+    footer{
+        font-size: 1.8vw;
     }
 }
 @media (min-width:800px) and (max-width:999px) {
     .wrapper{
         width: 95%;
-        background-color: antiquewhite;
     }
-    main{
-        width: 85%;
+    header img{
+        width: 25%;
+    }
+    header p{
+        font-size: 2vw;
     }
     .aside_left{
         width: 100%;
         text-align: center;
+        font-size: 2.3vw;
+        margin-top: -1%;
     }
     .aside_left ul{
         list-style: none;
@@ -245,36 +326,84 @@ footer{
         width: 15%;
         color: whitesmoke;
     }
+    main{
+        width: 90%;
+    }
+    main h2{
+        font-size: 2.8vw;
+    }
+    main article{
+        width: 100%;
+    }
+    main article h3{
+        font-size: 2.5vw;
+    }
+    main article img{
+        width: 20%;
+        margin: 0% 2% 5% 0%;
+    }
+    main article p{
+        font-size: 2.2vw;
+        line-height: 2.8vh;
+    }
+    .html{
+        font-size: 2.2vw;
+    }
+    .css{
+        font-size: 2.2vw;
+    }
+    .bootsrtap{
+        font-size: 2.2vw;
+    }
+    .angular{
+        font-size: 2.2vw;
+    }
     .aside_right{
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 100%;
     }
     .aside_right article{
-        width: 40%;
+        width: 45%;
     }
-    main{
-        width: 75%;
-        background-color: yellow;
+    .aside_right h4{
+        font-size: 2.6vw;
     }
     .aside_right h5{
-        padding: 1% 0px;
+        font-size: 2.3vw;
+        line-height: 2.2vh;
+    }
+    .aside_right p{
+        font-size: 2vw;
+        line-height: 2.7vh;
+    }
+    .aside_right a{
+        font-size: 2vw;
+        margin-left: 2%;
+    }
+    footer{
+        font-size: 2.1vw;
     }
 }
 @media (max-width:799px) {
     .wrapper{
         width: 95%;
-        background-color: violet;
     }
-    main{
-        width: 85%;
+    header img{
+        width: 30%;
+    }
+    header p{
+        font-size: 2.8vw;
     }
     .aside_left{
         width: 100%;
         text-align: center;
+        font-size: 3.1vw;
+        margin-top: -1%;
     }
     .aside_left ul{
         list-style: none;
+        margin-left: -10%;
     }
     .aside_left li{
         display: inline-block;
@@ -282,20 +411,63 @@ footer{
         width: 15%;
         color: whitesmoke;
     }
+    main{
+        width: 95%;
+    }
+    main h2{
+        font-size: 3.4vw;
+    }
+    main article{
+        width: 100%;
+    }
+    main article h3{
+        font-size: 3.1vw;
+    }
+    main article img{
+        width: 20%;
+        margin: 0% 2% 20% 0%;
+    }
+    main article p{
+        font-size: 2.9vw;
+        line-height: 2.3vh;
+    }
+    .html{
+        font-size: 3.1vw;
+    }
+    .css{
+        font-size: 3.1vw;
+    }
+    .bootsrtap{
+        font-size: 3.1vw;
+    }
+    .angular{
+        font-size: 3.1vw;
+    }
     .aside_right{
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 100%;
     }
     .aside_right article{
-        width: 40%;
+        width: 48%;
     }
-    main{
-        width: 75%;
-        background-color: yellow;
+    .aside_right h4{
+        font-size: 3.2vw;
     }
     .aside_right h5{
-        padding: 1% 0px;
+        font-size: 2.9vw;
+        line-height: 2.2vh;
+    }
+    .aside_right p{
+        font-size: 2.7vw;
+        line-height: 2.4vh;
+    }
+    .aside_right a{
+        font-size: 2.7vw;
+        margin-left: 2%;
+    }
+    footer{
+        font-size: 2.4vw;
     }
 }
 /*=============================================================media==========================================================*/
