@@ -471,4 +471,92 @@ footer{
         font-size: 2.5vw;
     }
 }
+
+@media (max-width:799px) and (orientation: landscape){
+    .wrapper{
+        width: 95%;
+    }
+    header img{
+        width: 30%;
+    }
+    header p{
+        font-size: 2.8vw;
+    }
+    .aside_left{
+        width: 100%;
+        text-align: center;
+        font-size: 3.1vw;
+        margin-top: -1%;
+    }
+    .aside_left ul{
+        list-style: none;
+        margin-left: -10%;
+    }
+    .aside_left li{
+        display: inline-block;
+        background-color: #2A7B7B;
+        width: 15%;
+        color: whitesmoke;
+    }
+    main{
+        width: 95%;
+    }
+    main h2{
+        font-size: 3.4vw;
+    }
+    main article{
+        width: 100%;
+    }
+    main article h3{
+        font-size: 3.1vw;
+    }
+    main article img{
+        width: 20%;
+        margin: 0% 2% 20% 0%;
+    }
+    main article p{
+        font-size: 2.9vw;
+        line-height: 10vh;
+    }
+    .html{
+        font-size: 3.1vw;
+    }
+    .css{
+        font-size: 3.1vw;
+    }
+    .bootsrtap{
+        font-size: 3.1vw;
+    }
+    .angular{
+        font-size: 3.1vw;
+    }
+    .aside_right{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .aside_right article{
+        width: 48%;
+    }
+    .aside_right h4{
+        font-size: 3.2vw;
+    }
+    .aside_right h5{
+        font-size: 2.9vw;
+        line-height: 2.7vh;
+    }
+    .aside_right p{
+        font-size: 2.7vw;
+        line-height: 2.8vh;
+    }
+    .aside_right a{
+        font-size: 2.7vw;
+        margin-left: 2%;
+    }
+    footer{
+        clear: both;
+        font-size: 2.5vw;
+    }
+}
+
 /*=============================================================media==========================================================*/
