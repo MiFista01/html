@@ -1,78 +1,140 @@
 body{
     background-image: url(../img/back.jpg);
     background-attachment: fixed;
+    background-size: 50vw;
 }
 .wrapper{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 95%;
     margin: auto;
-    background-color: whitesmoke;
+    background-color: rgb(231, 231, 231);
+    box-sizing: border-box;
+    padding: 2%;
+    
 }
+
+
+/*==============================================header=============================================================*/
 header{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 header div{
+    margin: 1% 2% 0% 2%;
+}
+.left{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 20%;
+    font-size: 1.5vw;
 }
-header img{
-    flex-basis: auto;
-    width: 5vw;
-    background-color: aliceblue;
+.left img{
+    width: 9vw;
 }
+.right p{
+    font-size: 1.3vw;
+}
+.right input {
+    width: 12vw;
+    height: 1.5vw;
+    font-size: 1.2vw;
+}
+/*==============================================header=============================================================*/
+
+
+/*==============================================navigation=============================================================*/
 aside ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
     list-style: none;
-    font-size: 1vw;
 }
 aside li{
+    
     margin: 0% 3% 0% 3%;
-    width: 5vw;
+    width: 8vw;
     background-color: rgb(202, 192, 202);
     text-align: center;
     border-radius: 1vw;
-
 }
+aside a{
+    font-size: 1.4vw;
+    color: black;
+    text-decoration: none;
+}
+/*==============================================navigation=============================================================*/
+
+
 main{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     align-items: stretch;
-    background-color: aqua;
     box-sizing: border-box;
-    padding: 0% 5%;
+    margin-bottom: 3%;
 }
 main h2{
+    font-size: 2vw;
     text-align: center;
     width: 100%;
+    background-color: rgb(202, 192, 202);
 }
 article{
     display: flex;
     flex-direction: column;
+    justify-content: start;
+    align-items: baseline;
+    flex-wrap: wrap;
+    width: 23%;
+}
+article .img{
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    width: 20%;
-    background-color: aquamarine;
-}
-article div{
-    height: 10vw;
-    background-color: aliceblue;
+    width: 100%;
+    height: 18vw;
 }
 article h3{
+    font-size: 1.6vw;
     text-align: center;
 }
 article img{
-    height: 5vw;
+    height: 12vw;
 }
 article p{
+    font-size: 1.2vw;
     text-align: justify;
 }
+.button{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    flex-grow: 2;
+    text-align: center;
+    align-items: center;
+}
+article a{
+    background-color: rgb(202, 192, 202);
+    color: black;
+    text-decoration: none;
+    padding: 3%;
+    border-radius: 20%;
+    font-size: 1.2vw;
+}
+
+
+/*==============================================footer=============================================================*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(202, 192, 202);
+    font-size: 1.1vw;
+}
+/*==============================================footer=============================================================*/
