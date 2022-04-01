@@ -6,7 +6,7 @@ body{
 .wrapper{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 95%;
     align-items: center;
     margin: auto;
     background-color: rgb(240, 240, 240);/*чуть темнее белого*/
@@ -156,8 +156,18 @@ article a{
 .gallery figure{
     width: 350px;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    text-align: center;
 }
 .gallery img{
+    height: 20vw;
+}
+.gallery figcaption{
     width: 100%;
 }
 /*==============================================footer=============================================================*/
