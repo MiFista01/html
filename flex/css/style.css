@@ -183,6 +183,7 @@ article a{
 .imgs_cont{
     width: 80%;
     overflow: hidden;
+    flex-grow: 1;
 }
 .imgs{
     display: flex;
@@ -192,9 +193,10 @@ article a{
     width: 100%;
     margin-left: 0px;
     transition-duration: 0.2s;
+    transform-origin: 0 0;
 }
 .imgs img{
-    width: 20vw;
+    width: 22vw;
 }
 /*==============================================footer=============================================================*/
 footer{
