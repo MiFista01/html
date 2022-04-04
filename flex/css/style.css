@@ -81,10 +81,11 @@ aside a{
 
 
 main{
+    width: 100%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-items: stretch;
+    
     box-sizing: border-box;
     margin-bottom: 3%;
 }
@@ -152,23 +153,48 @@ article a{
     flex-wrap: wrap;
     text-align: center;
     font-size: 20px;
+    width: 100%;
 }
 .gallery figure{
     width: 350px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
     text-align: center;
+    overflow: hidden;
 }
 .gallery img{
-    height: 20vw;
+    height: 15vw;
 }
 .gallery figcaption{
     width: 100%;
+}
+.scroll{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+.imgs_cont{
+    width: 80%;
+    overflow: hidden;
+}
+.imgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 0px;
+    transition-duration: 0.2s;
+}
+.imgs img{
+    width: 20vw;
 }
 /*==============================================footer=============================================================*/
 footer{
