@@ -195,6 +195,12 @@ article a{
     transition-duration: 0.2s;
     transform-origin: 0 0;
 }
+.imgs figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 .imgs img{
     width: 22vw;
 }
