@@ -1,34 +1,52 @@
-body{
+html {
+    scroll-behavior: inherit;
+}
+
+body {
     background-image: url(../img/back.jpg);
     background-attachment: fixed;
     background-size: 50vw;
 }
-.wrapper{
+
+.wrapper {
     display: flex;
     flex-direction: column;
     width: 95%;
     align-items: center;
     margin: auto;
-    background-color: rgb(240, 240, 240);/*чуть темнее белого*/
+    background-color: rgb(240, 240, 240);
+    /*чуть темнее белого*/
     box-sizing: border-box;
     padding: 2%;
-    box-shadow: 0px 0px 20px  rgba(0, 0, 0, 0.719);
-    border-radius: 300px/100px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.719);
+    border-radius: 10%;
+    overflow: hidden;
 }
 
 
 /*==============================================header=============================================================*/
-header{
+
+.progress_bar {
+    width: 100%;
+    background-color: black;
+    height: 1vh;
+    position: fixed;
+    top: 0px;
+}
+
+header {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-header div{
+
+header div {
     margin: 1% 2% 0% 2%;
 }
-.left{
+
+.left {
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -36,34 +54,40 @@ header div{
     font-size: 35px;
     flex-grow: 1;
 }
-.left img{
+
+.left img {
     width: 150px;
 }
-.right p{
+
+.right p {
     font-size: 25px;
 }
+
 .right input {
     width: 250px;
     height: 30px;
     font-size: 20px;
 }
+
+
 /*==============================================header=============================================================*/
 
 
 /*==============================================navigation=============================================================*/
 
-aside{
+aside {
     width: 100%;
 }
-aside ul{
+
+aside ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     list-style: none;
 }
-aside li{
-    
+
+aside li {
     margin: 0% 3% 0% 3%;
     width: 140px;
     background-color: rgb(226, 220, 226);
@@ -71,31 +95,34 @@ aside li{
     border-radius: 30px;
     margin-bottom: 15px;
 }
-aside a{
+
+aside a {
     font-size: 25px;
     color: black;
     text-decoration: none;
     transition-duration: 0.5s;
 }
+
+
 /*==============================================navigation=============================================================*/
 
-
-main{
+main {
     width: 100%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    
     box-sizing: border-box;
     margin-bottom: 3%;
 }
-main h2{
+
+main h2 {
     font-size: 45px;
     text-align: center;
     width: 100%;
     background-color: rgb(226, 220, 226);
 }
-article{
+
+article {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -110,7 +137,8 @@ article{
     border-radius: 150px/50px;
     box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.719);
 }
-article .img{
+
+article .img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -118,18 +146,22 @@ article .img{
     width: 100%;
     height: 350px;
 }
-article h3{
+
+article h3 {
     font-size: 35px;
     text-align: center;
 }
-article img{
+
+article img {
     height: 230px;
 }
-article p{
+
+article p {
     font-size: 25px;
     text-align: justify;
 }
-.button{
+
+.button {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -138,7 +170,8 @@ article p{
     text-align: center;
     align-items: center;
 }
-article a{
+
+article a {
     background-color: rgb(216, 205, 216);
     color: black;
     text-decoration: none;
@@ -147,7 +180,7 @@ article a{
     font-size: 25px;
 }
 
-.gallery{
+.gallery {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -155,7 +188,8 @@ article a{
     font-size: 20px;
     width: 100%;
 }
-.gallery figure{
+
+.gallery figure {
     width: 350px;
     flex-grow: 1;
     display: flex;
@@ -167,25 +201,30 @@ article a{
     text-align: center;
     overflow: hidden;
 }
-.gallery img{
+
+.gallery img {
     height: 15vw;
 }
-.gallery figcaption{
+
+.gallery figcaption {
     width: 100%;
 }
-.scroll{
+
+.scroll {
     display: flex;
     justify-content: space-between;
     text-align: center;
     align-items: center;
     width: 100%;
 }
-.imgs_cont{
+
+.imgs_cont {
     width: 80%;
     overflow: hidden;
     flex-grow: 1;
 }
-.imgs{
+
+.imgs {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -195,17 +234,22 @@ article a{
     transition-duration: 0.2s;
     transform-origin: 0 0;
 }
-.imgs figure{
+
+.imgs figure {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-.imgs img{
+
+.imgs img {
     width: 22vw;
 }
+
+
 /*==============================================footer=============================================================*/
-footer{
+
+footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -218,4 +262,6 @@ footer{
     padding: 20px;
     box-sizing: border-box;
 }
+
+
 /*==============================================footer=============================================================*/
