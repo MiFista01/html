@@ -23,43 +23,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
     <script src='js/header_show.js'></script>
+    <script src="js/progress_bar.js"></script>
 </head>
 
 <body>
     <div class="wrapper">
+        <hr class="progress_bar" id="progress_bar">
         <header id="header">
             <img src="img/ico.png" alt="aaa">
             <aside>
                 <nav>
                     <ul>
                         <li>
-                            <a href="">Цены</a>
+                            <a href="#prices">Цены</a>
                         </li>
                         <li>
-                            <a href="">Партнёры</a>
+                            <a href="#parts">Партнёры</a>
                         </li>
                         <li>
-                            <a href="">Отзывы</a>
+                            <a href="#messages">Отзывы</a>
                         </li>
                         <li>
-                            <a href="">Контакты</a>
+                            <a href="#contacts">Контакты</a>
                         </li>
                     </ul>
                 </nav>
             </aside>
         </header>
         <main>
-            <div class="unit offer">
+            <div class="unit offer" id="up">
                 <p class="headline">Изучайте <span class="color">Польшу</span> вместе с нами!</p>
                 <p>Цены, начиная с 305€</p>
-                <a href="">ОСТАВИТЬ ЗАЯВКУ</a>
+                <a href="#form">ОСТАВИТЬ ЗАЯВКУ</a>
             </div>
             <div class="unit">
                 <h2>ОПИСАНИЕ</h2>
-                <div class="img_des">
+                <div class="aktsia_des">
                     <img src="img/vkg.jpg" alt="aaa">
                     <img src="img/eestienergia.jpg" alt="aaa">
-                    <p>На все туры в Польшу действует 33% скидка за счет наших спонсоров, таких как Virumaa Keemia Grupp, Eesti Energia. Горящая скидка 33% действует только до 20.04.2022.</p>
+                    <p>На все туры в Польшу действует 33% скидка за счет наших спонсоров, таких как <span class="bold">Virumaa Keemia Grupp, Eesti Energia</span>. Горящая скидка <span class="red">33%</span>  действует только <span class="bold">до</span>  <span class="red">20.04.2022</span>. </p>
                 </div>
             </div>
             <div class="unit pluses">
@@ -85,7 +87,7 @@
                     </figure>
                 </div>
             </div>
-            <div class="unit prices">
+            <div class="unit prices" id="prices">
                 <h2>ЦЕНЫ</h2>
                 <div class="variants_prices">
                     <div class="prise color_prise1">
@@ -117,9 +119,9 @@
                     </div>
                 </div>
             </div>
-            <div class="unit form">
+            <div class="unit form" id="form">
                 <h2>ОСТАВИТЬ ЗАЯВКУ</h2>
-                <form action="">
+                <form action="" >
                     <div class="input">
                         <label for="">ПОЛНОЕ ИМЯ:</label>
                         <input type="text">
@@ -141,7 +143,7 @@
                     </div>
                 </form>
             </div>
-            <div class="unit messages">
+            <div class="unit messages" id="messages">
                 <h2>ПОСЛЕДНИЕ ОТЗЫВЫ</h2>
                 <div class="message">
                     <div class="message_img">
@@ -169,9 +171,12 @@
                         <h4>MaksimGrin</h4>
                         <p>Тур вышел не самым интересным, но за такие деньги грех жаловаться. Зато хватило времени осмотреть все самому! Спасибо за предоставленную возможность посетить эту страну!</p>
                     </div>
+                    <div class="button">
+                        <p id="button">ОСТАВИТЬ ОТЗЫВ</p>
+                    </div>
                 </div>
             </div>
-            <div class="unit parts">
+            <div class="unit parts" id="parts">
                 <h2>ПАРТНЕРЫ</h2>
                 <div class="example_parts">
                     <div class="part">
@@ -197,7 +202,7 @@
                 </div>
             </div>
             <div class="unit primes">
-                <h2>ЦЕНЫ</h2>
+                <h2>КОМАНДА</h2>
                 <div class="example_prime">
                     <div class="prime">
                         <div class="prime_img">
@@ -223,7 +228,11 @@
                 </div>
             </div>
         </main>
-        <footer>
+        <div class="move">
+            <a href="#up"><img src="img/up.png" alt="aaa"></a>
+            <a href="#contacts"><img src="img/down.png" alt="aaa"></a>
+        </div>
+        <footer id="contacts">
             <h3>КОНТАКТЫ</h3>
             <p>
                 +372 54884844
@@ -231,6 +240,19 @@
                 <br> Tallinna pst 6, Tallinn, Harju maakond, 31023
             </p>
         </footer>
+        <div class="message_form">
+            <form action="">
+                <input type="file" name="img" id="img" accept="image/*">
+                <div>
+                    <label for="name">Имя</label>
+                    <input type="text" id="name">
+                </div>
+                <div>
+                    <label for="">Ваше сообжение</label>
+                    <textarea name="des" id="des" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 

@@ -1,5 +1,9 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Noto Sans', sans-serif;
+    margin: 0px;
 }
 
 .wrapper {
@@ -11,7 +15,17 @@ body {
     width: 100%;
     overflow: visible;
 }
-
+.progress_bar{
+    width: 100%;
+    background-color: rgba(7, 7, 7, 0.7);
+    height: 0.5vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    border: 2px solid rgba(245, 245, 245, 0.7);
+    z-index: 2;
+}
 header {
     display: flex;
     flex-direction: row;
@@ -20,17 +34,18 @@ header {
     width: 100%;
     height: 15vh;
     box-shadow: 0px 6px 5px -5px black;
-    z-index: 2;
     position: sticky;
     top: 0px;
     background-color: white;
     transition-duration: 0.15s;
     transform-origin: 0 0;
+    z-index: 1;
 }
 
 header img {
     width: auto;
     height: 90%;
+    margin-top: 2vh;
 }
 
 header aside {
@@ -56,16 +71,17 @@ header ul {
 
 header li {
     margin-bottom: 3%;
-    font-size: 24px;
 }
 
 header a {
+    font-size: 24px;
     text-decoration: none;
     color: black;
 }
 
 main {
     width: 100%;
+    z-index: 0;
 }
 
 .unit {
@@ -91,6 +107,7 @@ main {
     margin: 2vh;
     font-size: 30px;
     opacity: 0.8;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.8);
 }
 
 .offer a {
@@ -119,7 +136,7 @@ main {
     color: #FF6969;
 }
 
-.img_des {
+.aktsia_des {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -130,17 +147,25 @@ main {
     margin-bottom: 25vh;
 }
 
-.img_des img {
-    height: 34vh;
+.aktsia_des img {
+    height: 30vh;
     width: auto;
 }
 
-.img_des p {
-    font-size: 22px;
-    margin: 1% 8%;
+.aktsia_des p {
+    font-size: 24px;
+    margin: 1% 10%;
+    padding: 0px 2%;
+    box-sizing: border-box;
     font-family: 'Merriweather Sans', sans-serif;
 }
-
+.red {
+    color: red;
+    font-weight: bold;
+}
+.bold{
+    font-weight: bold;
+}
 .pluses {
     background-image: url(../img/plus.png);
 }
@@ -270,14 +295,17 @@ main {
     height: 50%;
     background-color: rgba(255, 255, 255, 0.85);
     margin-bottom: 25vh;
-    padding: 4vh;
+    padding: 6vh 0vh;
     box-sizing: border-box;
+    box-shadow: 0px 0px 2px black;
 }
 
 .form label {
     font-size: 4vh;
     font-weight: bold;
     margin-right: 1%;
+    width: 30%;
+    text-align: end;
 }
 
 .form input {
@@ -326,8 +354,27 @@ main {
 .messages {
     background-color: #E8E8E8;
     padding-bottom: 15vh;
+    
 }
-
+.messages .button{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+    margin-top: 3vh;
+}
+.messages .button p{
+    background-color: #B1FF96;
+    font-size: 32px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Vollkorn', serif;
+    padding: 2vh 7vh;
+    border-radius: 3vh;
+    border: 1px solid #C9C9C9;
+    box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
 .message {
     display: flex;
     flex-direction: row;
@@ -335,8 +382,7 @@ main {
     align-items: center;
     flex-wrap: wrap;
     width: 70%;
-    margin-top: 1vh;
-    margin-top: 1px;
+    margin-bottom: 3vh;
 }
 
 .message_img {
@@ -368,6 +414,42 @@ main {
 .message .text p {
     font-size: 24px;
     width: 100%;
+}
+
+.message_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    border: 2px solid black;
+}
+.message_form form{
+    width: 70%;
+    background-color: #C9C9C9;
+}
+.message_form div{
+    display: flex;
+    flex-direction: column;
+
+}
+.message_form input{
+    width: 70%;
+    height: 5vh;
+    background-color: #EAE4E4;
+    border-radius: 1vh;
+    border: 2px solid #9D9999;
+    box-shadow: inset 0px 8px 10px -10px black;
+}
+.message_form textarea{
+    width: 70%;
+    height: 5vh;
+    background-color: #EAE4E4;
+    border-radius: 1vh;
+    border: 2px solid #9D9999;
+    box-shadow: inset 0px 8px 10px -10px black;
+    resize: none;
 }
 
 .parts {
@@ -475,13 +557,30 @@ footer {
     background: linear-gradient(to bottom, white, rgb(218, 218, 218));
     padding: 0px 30vh;
     box-sizing: border-box;
+    font-size: 28px;
 }
 
 footer h3 {
     width: 100%;
     text-align: end;
 }
-
+.move{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: fixed;
+    bottom: 1vh;
+    right: 0.5vw;
+    width: 3%;
+    z-index: 2;
+}
+.move img{
+    width: 100%;
+}
 footer p {
     text-align: end;
+    margin: 0px 0px;
+    margin-bottom: 2vh;
+    
 }

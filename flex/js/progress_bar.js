@@ -6,5 +6,4 @@ function bar() {
     let scrolls = window.pageYOffset || document.documentElement.scrollTop;
     let progress = (scrolls / (h_document - h_screen)) * 100;
     document.getElementById("progress_bar").style.width = String(progress) + "%";
-    console.log(String(progress) + "%")
 }
