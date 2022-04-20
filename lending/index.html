@@ -24,9 +24,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
     <script src='js/header_show.js'></script>
     <script src="js/progress_bar.js"></script>
+    <script src="js/message_form.js"></script>
+    <script src="js/input_show_img.js"></script>
 </head>
 
-<body>
+<body id="scr_body">
     <div class="wrapper">
         <hr class="progress_bar" id="progress_bar">
         <header id="header">
@@ -121,7 +123,7 @@
             </div>
             <div class="unit form" id="form">
                 <h2>ОСТАВИТЬ ЗАЯВКУ</h2>
-                <form action="" >
+                <form action="" method="post" >
                     <div class="input">
                         <label for="">ПОЛНОЕ ИМЯ:</label>
                         <input type="text">
@@ -172,7 +174,7 @@
                         <p>Тур вышел не самым интересным, но за такие деньги грех жаловаться. Зато хватило времени осмотреть все самому! Спасибо за предоставленную возможность посетить эту страну!</p>
                     </div>
                     <div class="button">
-                        <p id="button">ОСТАВИТЬ ОТЗЫВ</p>
+                        <p id="button" onclick="message_form()">ОСТАВИТЬ ОТЗЫВ</p>
                     </div>
                 </div>
             </div>
@@ -180,24 +182,24 @@
                 <h2>ПАРТНЕРЫ</h2>
                 <div class="example_parts">
                     <div class="part">
-                        <img src="img/vkg.jpg" alt="aaa">
-                        <a href="#">ПЕРЕЙТИ</a>
+                        <img src="img/vkg.jpg" alt="aaa" >
+                        <a href="https://www.vkg.ee/" target="_blank"><p>ПЕРЕЙТИ</p></a>
                     </div>
                     <div class="part">
                         <img src="img/eestienergia.jpg" alt="aaa">
-                        <a href="#">ПЕРЕЙТИ</a>
+                        <a href="https://www.energia.ee/ru/era/elekter/elektrileping-ja-paketid?customers=home-customer&packages=fix" target="_blank"><p>ПЕРЕЙТИ</p></a>
                     </div>
                     <div class="part">
                         <img src="img/eesti_tks.jpg" alt="aaa">
-                        <a href="#">ПЕРЕЙТИ</a>
+                        <a href="https://www.tootukassa.ee/ru" target="_blank"><p>ПЕРЕЙТИ</p></a>
                     </div>
                     <div class="part">
                         <img src="img/nova.jpg" alt="aaa">
-                        <a href="#">ПЕРЕЙТИ</a>
+                        <a href="https://www.novatours.ee/?gclid=EAIaIQobChMI-4jX6JCi9wIVEUBIAB0HSg0zEAAYASAAEgJDrPD_BwE" target="_blank"><p>ПЕРЕЙТИ</p></a>
                     </div>
                     <div class="part">
                         <img src="img/estravel.jpg" alt="aaa">
-                        <a href="#">ПЕРЕЙТИ</a>
+                        <a href="https://www.estravel.ee/" target="_blank"><p>ПЕРЕЙТИ</p></a>
                     </div>
                 </div>
             </div>
@@ -240,17 +242,26 @@
                 <br> Tallinna pst 6, Tallinn, Harju maakond, 31023
             </p>
         </footer>
-        <div class="message_form">
-            <form action="">
-                <input type="file" name="img" id="img" accept="image/*">
-                <div>
-                    <label for="name">Имя</label>
-                    <input type="text" id="name">
+        <div hidden class="message_form" id="message_form"> 
+            <form action="" method="POST" enctype="multipart/form-data">
+                <div class="krest">
+                    <img src="img/krest.png" alt="aaa" onclick="message_form()">
                 </div>
-                <div>
-                    <label for="">Ваше сообжение</label>
-                    <textarea name="des" id="des" cols="30" rows="10"></textarea>
+                <div class="img">
+                    <img src="img/ico_plus.png" alt="aaa" onclick="put_img()" id="showImg">
                 </div>
+                <input hidden required type="file" name="image" id="img" size="1" onchange="show_img()" >
+                <div class="other">
+                    <div>
+                        <label for="name">Имя</label>
+                        <input required type="text" id="name">
+                    </div>
+                    <div>
+                        <label for="">Ваше сообщение</label>
+                        <textarea required name="des" id="des" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <button>Оставиь сообщение</button>
             </form>
         </div>
     </div>

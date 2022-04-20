@@ -44,7 +44,7 @@ header {
 
 header img {
     width: auto;
-    height: 90%;
+    height: 80%;
     margin-top: 2vh;
 }
 
@@ -107,7 +107,7 @@ main {
     margin: 2vh;
     font-size: 30px;
     opacity: 0.8;
-    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.8);
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.462);
 }
 
 .offer a {
@@ -206,7 +206,6 @@ main {
 }
 
 .prices {
-    font-family: 'Fascinate', cursive;
     background: linear-gradient(to bottom, white, rgb(235, 235, 235));
 }
 
@@ -374,6 +373,7 @@ main {
     border: 1px solid #C9C9C9;
     box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.25);
     cursor: pointer;
+    user-select: none;
 }
 .message {
     display: flex;
@@ -417,39 +417,93 @@ main {
 }
 
 .message_form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-color: white;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.347);
     border: 2px solid black;
+    box-sizing: border-box;
+}
+.message_form .krest{
+    width: 100%;
+}
+.message_form .krest img{
+    width: 5%;
+    float: right;
+    cursor: pointer;
 }
 .message_form form{
-    width: 70%;
-    background-color: #C9C9C9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 40%;
+    background-color: whitesmoke;
+    padding: 3vh;
+    border-radius: 1vh;
+    border: 3px solid black;
+    margin-left: 30%;
+    margin-top: 10%;
 }
-.message_form div{
+.message_form .other{
+    width: 70%;
+}
+.message_form .other div{
     display: flex;
     flex-direction: column;
+    width: 100%;
 
 }
-.message_form input{
-    width: 70%;
+.message_form .img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 20vh;
+    height: 20vh;
+    margin: 1%;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.message_form img{
+    height: 100%;
+}
+
+.message_form input[type="text"]{
+    width: 100%;
     height: 5vh;
-    background-color: #EAE4E4;
+    background-color: whitesmoke;
     border-radius: 1vh;
     border: 2px solid #9D9999;
-    box-shadow: inset 0px 8px 10px -10px black;
+    box-shadow: inset 0px -8px 10px -10px black;
+    padding: 1vh;
+    box-sizing: border-box;
 }
 .message_form textarea{
-    width: 70%;
-    height: 5vh;
-    background-color: #EAE4E4;
+    width: 100%;
+    height: 15vh;
+    background-color: whitesmoke;
     border-radius: 1vh;
     border: 2px solid #9D9999;
-    box-shadow: inset 0px 8px 10px -10px black;
+    box-shadow: inset 0px -8px 10px -10px black;
     resize: none;
+    padding: 1vh;
+    box-sizing: border-box;
+}
+.message_form button{
+    margin-top: 3vh;
+    font-size: 20px;
+    color: black;
+    font-family: 'Vollkorn', serif;
+    padding: 2vh 7vh;
+    border-radius: 3vh;
+    border: 1px solid #C9C9C9;
+    box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
 }
 
 .parts {
@@ -473,9 +527,10 @@ main {
     justify-content: space-between;
     align-items: center;
     width: 30vh;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 15px -5px rgb(0, 0, 0);
     border-radius: 1vh;
     overflow: hidden;
+    margin-top: 2vh;
 }
 
 .part img {
@@ -492,6 +547,11 @@ main {
     padding: 1vh;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     border-radius: 1vh;
+}
+.part a p{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 0;
+    margin: 0;
 }
 
 .primes {
