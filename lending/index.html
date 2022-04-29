@@ -7,6 +7,8 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/media.css'>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;0,900;1,200&display=swap" rel="stylesheet">
@@ -26,10 +28,11 @@
     <script src="js/progress_bar.js"></script>
     <script src="js/message_form.js"></script>
     <script src="js/input_show_img.js"></script>
+    <script src="js/sizes.js"></script>
 </head>
 
 <body id="scr_body">
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
         <hr class="progress_bar" id="progress_bar">
         <header id="header">
             <img src="img/ico.png" alt="aaa">
@@ -55,7 +58,7 @@
         <main>
             <div class="unit offer" id="up">
                 <p class="headline">Изучайте <span class="color">Польшу</span> вместе с нами!</p>
-                <p>Цены, начиная с 305€</p>
+                <p class="description">Цены, начиная с 305€</p>
                 <a href="#form">ОСТАВИТЬ ЗАЯВКУ</a>
             </div>
             <div class="unit">
@@ -63,12 +66,13 @@
                 <div class="aktsia_des">
                     <img src="img/vkg.jpg" alt="aaa">
                     <img src="img/eestienergia.jpg" alt="aaa">
-                    <p>На все туры в Польшу действует 33% скидка за счет наших спонсоров, таких как <span class="bold">Virumaa Keemia Grupp, Eesti Energia</span>. Горящая скидка <span class="red">33%</span>  действует только <span class="bold">до</span>  <span class="red">20.04.2022</span>. </p>
+                    <p>На все туры в Польшу действует 33% скидка за счет наших спонсоров, таких как <span class="bold">Virumaa Keemia Grupp, Eesti Energia</span>. Горящая скидка <span class="red">33%</span> действует только <span class="bold">до</span>
+                        <span class="red">20.04.2022</span>. </p>
                 </div>
             </div>
             <div class="unit pluses">
                 <h2>МЫ ПРЕДЛАГАЕМ</h2>
-                <div class="plus">
+                <div class="plus" id="plus">
                     <figure>
                         <img src="img/fast.png" alt="aaa">
                         <figcaption>
@@ -78,7 +82,7 @@
                     <figure>
                         <img src="img/prise.png" alt="aaa">
                         <figcaption>
-                            <p>Низкие цены(от 305 евро)</p>
+                            <p>Низкие цены <b>(от 305 евро)</b></p>
                         </figcaption>
                     </figure>
                     <figure>
@@ -123,7 +127,7 @@
             </div>
             <div class="unit form" id="form">
                 <h2>ОСТАВИТЬ ЗАЯВКУ</h2>
-                <form action="" method="post" >
+                <form action="" method="post">
                     <div class="input">
                         <label for="">ПОЛНОЕ ИМЯ:</label>
                         <input type="text">
@@ -182,24 +186,34 @@
                 <h2>ПАРТНЕРЫ</h2>
                 <div class="example_parts">
                     <div class="part">
-                        <img src="img/vkg.jpg" alt="aaa" >
-                        <a href="https://www.vkg.ee/" target="_blank"><p>ПЕРЕЙТИ</p></a>
+                        <img src="img/vkg.jpg" alt="aaa">
+                        <a href="https://www.vkg.ee/" target="_blank">
+                            <p>ПЕРЕЙТИ</p>
+                        </a>
                     </div>
                     <div class="part">
                         <img src="img/eestienergia.jpg" alt="aaa">
-                        <a href="https://www.energia.ee/ru/era/elekter/elektrileping-ja-paketid?customers=home-customer&packages=fix" target="_blank"><p>ПЕРЕЙТИ</p></a>
+                        <a href="https://www.energia.ee/ru/era/elekter/elektrileping-ja-paketid?customers=home-customer&packages=fix" target="_blank">
+                            <p>ПЕРЕЙТИ</p>
+                        </a>
                     </div>
                     <div class="part">
                         <img src="img/eesti_tks.jpg" alt="aaa">
-                        <a href="https://www.tootukassa.ee/ru" target="_blank"><p>ПЕРЕЙТИ</p></a>
+                        <a href="https://www.tootukassa.ee/ru" target="_blank">
+                            <p>ПЕРЕЙТИ</p>
+                        </a>
                     </div>
                     <div class="part">
                         <img src="img/nova.jpg" alt="aaa">
-                        <a href="https://www.novatours.ee/?gclid=EAIaIQobChMI-4jX6JCi9wIVEUBIAB0HSg0zEAAYASAAEgJDrPD_BwE" target="_blank"><p>ПЕРЕЙТИ</p></a>
+                        <a href="https://www.novatours.ee/?gclid=EAIaIQobChMI-4jX6JCi9wIVEUBIAB0HSg0zEAAYASAAEgJDrPD_BwE" target="_blank">
+                            <p>ПЕРЕЙТИ</p>
+                        </a>
                     </div>
                     <div class="part">
                         <img src="img/estravel.jpg" alt="aaa">
-                        <a href="https://www.estravel.ee/" target="_blank"><p>ПЕРЕЙТИ</p></a>
+                        <a href="https://www.estravel.ee/" target="_blank">
+                            <p>ПЕРЕЙТИ</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -242,7 +256,7 @@
                 <br> Tallinna pst 6, Tallinn, Harju maakond, 31023
             </p>
         </footer>
-        <div hidden class="message_form" id="message_form"> 
+        <div hidden class="message_form" id="message_form">
             <form action="" method="POST" enctype="multipart/form-data">
                 <div class="krest">
                     <img src="img/krest.png" alt="aaa" onclick="message_form()">
@@ -250,7 +264,7 @@
                 <div class="img">
                     <img src="img/ico_plus.png" alt="aaa" onclick="put_img()" id="showImg">
                 </div>
-                <input hidden required type="file" name="image" id="img" size="1" onchange="show_img()" >
+                <input hidden required type="file" name="image" id="img" size="1" onchange="show_img()">
                 <div class="other">
                     <div>
                         <label for="name">Имя</label>

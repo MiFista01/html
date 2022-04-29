@@ -1,0 +1,64 @@
+@media (max-width: 1185px) {
+    .aktsia_des p {
+        margin: 1% 0%;
+    }
+}
+
+@media (max-width: 740px) {
+    header aside {
+        width: 100%;
+    }
+    .offer {
+        background-size: 190% 100%;
+        background-position: 85% 50%;
+    }
+    .offer .headline {
+        margin: 0px 5%;
+        margin-top: 13vh;
+        font-size: 60px;
+    }
+    .offer a {
+        margin-top: 5%;
+    }
+    .aktsia_des p {
+        font-size: 32px;
+    }
+    .pluses h2 {
+        font-size: 45px;
+    }
+    .pluses p {
+        font-size: 30px;
+    }
+    .form label {
+        font-size: 20px;
+    }
+    .form input {
+        height: 30px;
+        border-radius: 5px;
+    }
+    .form form {
+        width: 90%;
+    }
+    .form .input {
+        width: 90%;
+    }
+    .form .button {
+        width: 90%;
+        justify-content: end;
+    }
+    .form .button button {
+        font-size: 25px;
+        border-radius: 5px;
+        padding: 5px 30px;
+    }
+    .message_img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 450px) {
+    .offer a {
+        padding: 20px 0px;
+    }
+}

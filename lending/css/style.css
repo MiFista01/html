@@ -1,6 +1,7 @@
-html{
+html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: 'Noto Sans', sans-serif;
     margin: 0px;
@@ -15,7 +16,8 @@ body {
     width: 100%;
     overflow: visible;
 }
-.progress_bar{
+
+.progress_bar {
     width: 100%;
     background-color: rgba(7, 7, 7, 0.7);
     height: 0.5vh;
@@ -26,13 +28,14 @@ body {
     border: 2px solid rgba(245, 245, 245, 0.7);
     z-index: 2;
 }
+
 header {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
-    height: 15vh;
     box-shadow: 0px 6px 5px -5px black;
     position: sticky;
     top: 0px;
@@ -44,24 +47,23 @@ header {
 
 header img {
     width: auto;
-    height: 80%;
-    margin-top: 2vh;
+    height: 100px;
+    margin-top: 10px;
 }
 
 header aside {
     width: 55%;
-    height: 100%;
+    margin-top: 5%;
 }
 
-header nav {
-    height: 100%;
-}
+header nav {}
 
 header ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-end;
+    flex-wrap: wrap;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -70,7 +72,9 @@ header ul {
 }
 
 header li {
-    margin-bottom: 3%;
+    width: 150px;
+    text-align: center;
+    margin: 0% 1% 0% 1%;
 }
 
 header a {
@@ -103,7 +107,7 @@ main {
     background-image: url(../img/back_offer2.png);
 }
 
-.offer p {
+.offer .description {
     margin: 2vh;
     font-size: 30px;
     opacity: 0.8;
@@ -112,24 +116,25 @@ main {
 
 .offer a {
     background-color: #FF7272;
-    padding: 1% 4%;
+    padding: 10px 80px;
     text-decoration: none;
     color: white;
     font-family: 'Vollkorn', serif;
     font-size: 32px;
-    margin-top: 15vh;
-    border-radius: 3vh;
+    margin-top: 10%;
+    border-radius: 15px;
     border: 1px solid black;
     box-shadow: inset 0px 10px 10px -5px rgba(0, 0, 0, 0.5);
     margin-bottom: 40vh;
+    text-align: center;
 }
 
 .offer .headline {
-    margin: 0;
     margin-top: 21vh;
     font-family: 'Fascinate', cursive;
     font-size: 48px;
     font-weight: bold;
+    text-align: center;
 }
 
 .headline .color {
@@ -148,7 +153,7 @@ main {
 }
 
 .aktsia_des img {
-    height: 30vh;
+    height: 200px;
     width: auto;
 }
 
@@ -158,14 +163,18 @@ main {
     padding: 0px 2%;
     box-sizing: border-box;
     font-family: 'Merriweather Sans', sans-serif;
+    text-align: justify;
 }
+
 .red {
     color: red;
     font-weight: bold;
 }
-.bold{
+
+.bold {
     font-weight: bold;
 }
+
 .pluses {
     background-image: url(../img/plus.png);
 }
@@ -212,7 +221,7 @@ main {
 .variants_prices {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: stretch;
     width: 80%;
@@ -224,11 +233,11 @@ main {
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    width: 40vh;
     padding: 1.5%;
     box-sizing: border-box;
     box-shadow: 0px 5px 15px -5px black;
-    border-radius: 5vh;
+    border-radius: 15px;
+    margin: 15px;
 }
 
 .color_prise1 {
@@ -257,6 +266,7 @@ main {
     padding: 0;
     margin: 5%;
     font-size: 32px;
+    text-align: center;
 }
 
 .prise p {
@@ -300,7 +310,7 @@ main {
 }
 
 .form label {
-    font-size: 4vh;
+    font-size: 36px;
     font-weight: bold;
     margin-right: 1%;
     width: 30%;
@@ -309,7 +319,7 @@ main {
 
 .form input {
     width: 70%;
-    height: 5vh;
+    height: 48px;
     background-color: #EAE4E4;
     border-radius: 1vh;
     border: 2px solid #9D9999;
@@ -353,16 +363,17 @@ main {
 .messages {
     background-color: #E8E8E8;
     padding-bottom: 15vh;
-    
 }
-.messages .button{
+
+.messages .button {
     display: flex;
     flex-direction: row;
     justify-content: start;
     width: 100%;
     margin-top: 3vh;
 }
-.messages .button p{
+
+.messages .button p {
     background-color: #B1FF96;
     font-size: 32px;
     text-decoration: none;
@@ -375,6 +386,7 @@ main {
     cursor: pointer;
     user-select: none;
 }
+
 .message {
     display: flex;
     flex-direction: row;
@@ -390,8 +402,8 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 20vh;
-    height: 20vh;
+    width: 150px;
+    height: 150px;
     overflow: hidden;
     border-radius: 100%;
     margin-right: 10px;
@@ -416,7 +428,7 @@ main {
     width: 100%;
 }
 
-.message_form{
+.message_form {
     position: fixed;
     top: 0;
     left: 0;
@@ -426,15 +438,18 @@ main {
     border: 2px solid black;
     box-sizing: border-box;
 }
-.message_form .krest{
+
+.message_form .krest {
     width: 100%;
 }
-.message_form .krest img{
+
+.message_form .krest img {
     width: 5%;
     float: right;
     cursor: pointer;
 }
-.message_form form{
+
+.message_form form {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -448,16 +463,18 @@ main {
     margin-left: 30%;
     margin-top: 10%;
 }
-.message_form .other{
+
+.message_form .other {
     width: 70%;
 }
-.message_form .other div{
+
+.message_form .other div {
     display: flex;
     flex-direction: column;
     width: 100%;
-
 }
-.message_form .img{
+
+.message_form .img {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -469,11 +486,12 @@ main {
     border-radius: 100%;
     overflow: hidden;
 }
-.message_form img{
+
+.message_form img {
     height: 100%;
 }
 
-.message_form input[type="text"]{
+.message_form input[type="text"] {
     width: 100%;
     height: 5vh;
     background-color: whitesmoke;
@@ -483,7 +501,8 @@ main {
     padding: 1vh;
     box-sizing: border-box;
 }
-.message_form textarea{
+
+.message_form textarea {
     width: 100%;
     height: 15vh;
     background-color: whitesmoke;
@@ -494,7 +513,8 @@ main {
     padding: 1vh;
     box-sizing: border-box;
 }
-.message_form button{
+
+.message_form button {
     margin-top: 3vh;
     font-size: 20px;
     color: black;
@@ -548,7 +568,8 @@ main {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     border-radius: 1vh;
 }
-.part a p{
+
+.part a p {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 0;
     margin: 0;
@@ -624,7 +645,8 @@ footer h3 {
     width: 100%;
     text-align: end;
 }
-.move{
+
+.move {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -635,12 +657,13 @@ footer h3 {
     width: 3%;
     z-index: 2;
 }
-.move img{
+
+.move img {
     width: 100%;
 }
+
 footer p {
     text-align: end;
     margin: 0px 0px;
     margin-bottom: 2vh;
-    
 }
