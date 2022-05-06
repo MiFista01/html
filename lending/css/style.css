@@ -108,10 +108,11 @@ main {
 }
 
 .offer .description {
-    margin: 2vh;
+    font-family: 'Fascinate';
     font-size: 30px;
+    font-weight: 500;
     opacity: 0.8;
-    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.462);
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.462);
 }
 
 .offer a {
@@ -310,7 +311,7 @@ main {
 }
 
 .form label {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: bold;
     margin-right: 1%;
     width: 30%;
@@ -324,6 +325,7 @@ main {
     border-radius: 1vh;
     border: 2px solid #9D9999;
     box-shadow: inset 0px 8px 10px -10px black;
+    flex-grow: 1;
 }
 
 .input {
@@ -374,17 +376,17 @@ main {
 }
 
 .messages .button p {
-    background-color: #B1FF96;
-    font-size: 32px;
+    background-color: #FF6969;
     text-decoration: none;
-    color: black;
+    color: white;
     font-family: 'Vollkorn', serif;
-    padding: 2vh 7vh;
     border-radius: 3vh;
     border: 1px solid #C9C9C9;
     box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.25);
     cursor: pointer;
     user-select: none;
+    border: 1px solid black;
+    text-align: center;
 }
 
 .message {
@@ -636,7 +638,7 @@ footer {
     width: 100%;
     background-color: #E8E8E8;
     background: linear-gradient(to bottom, white, rgb(218, 218, 218));
-    padding: 0px 30vh;
+    padding: 0px 10%;
     box-sizing: border-box;
     font-size: 28px;
 }
@@ -644,18 +646,6 @@ footer {
 footer h3 {
     width: 100%;
     text-align: end;
-}
-
-.move {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    position: fixed;
-    bottom: 1vh;
-    right: 0.5vw;
-    width: 3%;
-    z-index: 2;
 }
 
 .move img {
@@ -666,4 +656,16 @@ footer p {
     text-align: end;
     margin: 0px 0px;
     margin-bottom: 2vh;
+}
+
+.move {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: fixed;
+    bottom: 1vh;
+    right: 0.5vw;
+    width: 60px;
+    z-index: 2;
 }

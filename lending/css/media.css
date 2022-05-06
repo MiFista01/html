@@ -4,6 +4,12 @@
     }
 }
 
+@media (max-width: 8405px) {
+    .form label {
+        width: 35%;
+    }
+}
+
 @media (max-width: 740px) {
     header aside {
         width: 100%;
@@ -47,18 +53,36 @@
         justify-content: end;
     }
     .form .button button {
-        font-size: 25px;
         border-radius: 5px;
         padding: 5px 30px;
+    }
+    .messages .button {
+        justify-content: center;
+    }
+    .message {
+        width: 90%;
     }
     .message_img {
         width: 100px;
         height: 100px;
+    }
+    .part {
+        width: 100%;
+    }
+}
+
+@media (max-width: 615px) {
+    .message_img {
+        width: 150px;
+        height: 150px;
     }
 }
 
 @media (max-width: 450px) {
     .offer a {
         padding: 20px 0px;
+    }
+    .aktsia_des img {
+        height: 150px;
     }
 }

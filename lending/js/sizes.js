@@ -18,6 +18,9 @@ function size() {
     }
     let mass2 = document.getElementsByClassName("prise");
     for (i = 0; i < mass2.length; i++) {
-        mass2[i].style.width = String(sessionStorage.getItem("width") * 0.20) + "px";
+        mass2[i].style.width = String(sessionStorage.getItem("width") * 0.2) + "px";
     }
+    let message_button = document.getElementById("button");
+    message_button.style.fontSize = String(Math.round(sessionStorage.getItem("width") * 0.012)) + "px";
+    message_button.style.padding = String(Math.round(sessionStorage.getItem("width") * 0.005)) + "px " + String(Math.round(sessionStorage.getItem("width") * 0.012)) + "px"
 }
