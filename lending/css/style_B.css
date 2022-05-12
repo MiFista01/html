@@ -200,7 +200,6 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 40vh;
     margin: 0 0;
     text-align: center;
     font-family: 'Merriweather Sans', sans-serif;
@@ -658,6 +657,8 @@ footer #contact_img {
     background-color: #9D9999;
     background-size: 100%;
     margin: 3%;
+    box-shadow: inset 0px 0px 80px rgb(0, 0, 0);
+    border: 2px solid rgb(36, 36, 36);
 }
 
 .move img {

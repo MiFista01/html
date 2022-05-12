@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", size);
 let count = 0;
+let path;
 
 function size() {
     let client_window_height = 0;
@@ -13,17 +14,19 @@ function size() {
         count += 1;
         sessionStorage.setItem("count", count);
     };
-    let img = new Image();
-    let path = "img/home.PNG"
-    img.src = path;
+
+    path = ["img/fast.png", "img/prise.png", "img/prof.jpg"];
+
+    let footer_img = new Image();
+    path = "img/home.PNG"
+    footer_img.src = path;
     let contact_img = document.getElementById("contact_img");
-    img.onload = function() {
+    footer_img.onload = function() {
         contact_img.style.width = String(Math.round(sessionStorage.getItem("width") * 0.2)) + "px";
         let relationship = this.width / this.height;
         contact_img.style.height = String(Math.round(sessionStorage.getItem("width") * 0.2 / relationship)) + "px";
-        contact_img.style.backgroundImage = img.src;
+        contact_img.style.backgroundImage = "url(" + footer_img.src + ")";
     };
-    console.log(img.src.substring(8));
     let mass1 = document.getElementById("plus").querySelectorAll("figure");
     for (i = 0; i < mass1.length; i++) {
         mass1[i].style.width = String(sessionStorage.getItem("width") * 0.18) + "px";
