@@ -9,9 +9,21 @@ function size() {
         client_window_weight = window.innerWidth;
         sessionStorage.setItem("height", client_window_height);
         sessionStorage.setItem("width", client_window_weight);
+
         count += 1;
         sessionStorage.setItem("count", count);
     };
+    let img = new Image();
+    let path = "img/home.PNG"
+    img.src = path;
+    let contact_img = document.getElementById("contact_img");
+    img.onload = function() {
+        contact_img.style.width = String(Math.round(sessionStorage.getItem("width") * 0.2)) + "px";
+        let relationship = this.width / this.height;
+        contact_img.style.height = String(Math.round(sessionStorage.getItem("width") * 0.2 / relationship)) + "px";
+        contact_img.style.backgroundImage = img.src;
+    };
+    console.log(img.src.substring(8));
     let mass1 = document.getElementById("plus").querySelectorAll("figure");
     for (i = 0; i < mass1.length; i++) {
         mass1[i].style.width = String(sessionStorage.getItem("width") * 0.18) + "px";
@@ -23,4 +35,5 @@ function size() {
     let message_button = document.getElementById("button");
     message_button.style.fontSize = String(Math.round(sessionStorage.getItem("width") * 0.012)) + "px";
     message_button.style.padding = String(Math.round(sessionStorage.getItem("width") * 0.005)) + "px " + String(Math.round(sessionStorage.getItem("width") * 0.012)) + "px"
+
 }
