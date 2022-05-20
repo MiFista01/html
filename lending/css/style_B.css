@@ -52,11 +52,9 @@ header img {
 }
 
 header aside {
-    width: 55%;
+    width: 70%;
     margin-top: 5%;
 }
-
-header nav {}
 
 header ul {
     display: flex;
@@ -399,20 +397,12 @@ main {
 }
 
 .message_img {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    border-radius: 100%;
     margin-right: 10px;
-}
-
-.message_img img {
-    height: 100%;
-    width: auto;
+    background-size: 100%;
+    background-position: center;
+    box-shadow: inset 0px 0px 20px rgb(0, 0, 0);
+    border: 2px solid rgb(36, 36, 36);
+    border-radius: 100%;
 }
 
 .message .text {
