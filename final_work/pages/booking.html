@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Amigos</title>
+    <link rel="shortcut icon" href="../img/ico.png" type="image/x-icon">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/media.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="../js/show.js"></script>
+    <script src="../js/change_back.js"></script>
+</head>
+<body>
+    <div class="wrapper hidden">
+        <header>
+            <a href="../index.html"><img src="../img/logo.svg" alt="logo" id="logo"></a>
+            <nav>
+                <ul class="headers_aside">
+                    <li class="menu" >
+                    <div class="button_list">
+                        <a href="menu.html">МЕНЮ</a>
+                        <img src="../img/index_imgs/arrow_down.svg" alt="arrow_for_list" id="menu">
+                    </div>
+                    <ul class="dmenu" id="dmenu">
+                        <li><a href="menu.html#dessert">Десерты</a></li>
+                        <li><a href="menu.html#first">Первое</a></li>
+                        <li><a href="menu.html#second">Второе</a></li>
+                        <li><a href="menu.html#snacks">Закуски</a></li>
+                        <li><a href="menu.html#drink">Напитки</a></li>
+                        <li><a href="menu.html#alcohol">Алкоголь</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="booking.html">БРОНЬ</a></li>
+                    <li><a href="gallery.html">ГАЛЕРЕЯ</a></li>
+                    <li><a href="delivery.html">ДОСТАВКА</a></li>
+                    <li><a href="reviews.html">ОТЗЫВ</a></li>
+                    <li><a href="about.html">О НАС</a></li>
+                    <li><a href="contacts.html">КОНТАКТЫ</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form action="" class="booking" method="post">
+                <div class="booking_header">
+                    <img src="../img/logo_black.svg" alt="logo">
+                    <input required type="date" name="date" id="date">
+                    <select required name="time" id="time">
+                        <option selected disabled value="-">Время</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                    </select>
+                    <select required name="count" id="count">
+                        <option selected disabled value="-">Кол. людей</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="0">>8</option>
+                    </select>
+                </div>
+                <div class="information">
+                    <div>
+                        <input required type="text" name="name" id="name" placeholder="Имя фамилия">
+                        <input required type="text" name="mobile" id="mobile" placeholder="Тел.">
+                        <input required type="email" name="email" id="email" placeholder="Почта">
+                    </div>
+                    <textarea required name="wishes" id="wishes" cols="30" rows="10" placeholder="Ваши пожелания/предпочтения"></textarea>
+                </div>
+                <button>Отправить заявку</button>
+            </form>
+        </main>
+        <footer id="footer" class="footer_index">
+            <img src="../img/index_imgs/arrow_left.svg" alt="left" class="icon_left" onclick=" move_left()">
+            <a href=""><img src="../img/index_imgs/vk.png" alt="vk"></a>
+            <p>+37259024698</p>
+            <a href=""><img src="../img/index_imgs/insta.png" alt="insta"></a>
+            <img src="../img/index_imgs/arrow_right.svg" alt="right" class="icon_right" onclick="move_right()">
+            <div id="contacts">
+                <h2>Мария Ведехова</h2>
+                <h3>Администратор</h3>
+                <p>Tel. +37259045698</p>
+                <h2>Время работы</h2>
+                <h3>Пн-Сб 8:00-21:00</h3>
+                <h3>Заказы<br> Пн-Пт 9:00-20:00</h3>
+            </div>
+            <iframe class="mobile_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1564.5286841679178!2d-4.415270369345751!3d36.73278607855286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f780401ae7e9%3A0x79e1653e361c405!2sEl%20Imperial%20Restobar!5e0!3m2!1sru!2ses!4v1654764195692!5m2!1sru!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </footer>
+        <div class="mobile">
+            <a href="booking.html">
+                <div>
+                    <img src="../img/mobile/booking.svg" alt="">
+                    <h2>БРОНЬ</h2>
+                </div>
+            </a>
+            <a href="menu.html">
+                <div>
+                    <img src="../img/mobile/menu.svg" alt="">
+                    <h2>МЕНЮ</h2>
+                </div>
+            </a>
+            <a href="delivery.html">
+                <div>
+                    <img src="../img/mobile/location.svg" alt="">
+                    <h2>ДОСТАВКА</h2>
+                </div>
+            </a>
+            <a href="reviews.html">
+                <div>
+                    <img src="../img/mobile/review.svg" alt="">
+                    <h2>ОТЗЫВ</h2>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

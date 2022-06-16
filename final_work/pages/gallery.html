@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Amigos</title>
+    <link rel="shortcut icon" href="../img/ico.png" type="image/x-icon">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="../js/show.js"></script>
+    <script src="../js/change_back.js"></script>
+    <script src="../js/gallery.js"></script>
+</head>
+<body>
+    <div class="wrapper hidden" id="index">
+        <header>
+            <a href="../index.html"><img src="../img/logo.svg" alt="logo" id="logo"></a>
+            <nav>
+                <ul class="headers_aside">
+                    <li class="menu" >
+                    <div class="button_list">
+                        <a href="menu.html">МЕНЮ</a>
+                        <img src="../img/index_imgs/arrow_down.svg" alt="arrow_for_list" id="menu">
+                    </div>
+                    <ul class="dmenu" id="dmenu">
+                        <li><a href="menu.html#dessert">Десерты</a></li>
+                        <li><a href="menu.html#first">Первое</a></li>
+                        <li><a href="menu.html#second">Второе</a></li>
+                        <li><a href="menu.html#snacks">Закуски</a></li>
+                        <li><a href="menu.html#drink">Напитки</a></li>
+                        <li><a href="menu.html#alcohol">Алкоголь</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="booking.html">БРОНЬ</a></li>
+                    <li><a href="gallery.html">ГАЛЕРЕЯ</a></li>
+                    <li><a href="delivery.html">ДОСТАВКА</a></li>
+                    <li><a href="reviews.html">ОТЗЫВ</a></li>
+                    <li><a href="about.html">О НАС</a></li>
+                    <li><a href="contacts.html">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+            <h2 class="food_name" id="food_name"></h2>
+        </header>
+        <footer id="footer">
+            <div class="array_imgs">
+                <img src="../img/index_imgs/arrow_left.svg" alt="" id="move_left">
+                <div class="imgs">
+                    <div class="block_imgs" id="move"></div>
+                </div>
+                <img src="../img/index_imgs/arrow_right.svg" alt="" id="move_right">
+            </div>
+            <img src="../img/index_imgs/arrow_left.svg" alt="left" class="icon_left" onclick=" move_left()">
+            <img src="../img/index_imgs/vk.png" alt="vk">
+            <p>+37259024698</p>
+            <img src="../img/index_imgs/insta.png" alt="insta">
+            <img src="../img/index_imgs/arrow_right.svg" alt="right" class="icon_right" onclick="move_right()">
+        </footer>
+    </div>
+</body>
+</html>
