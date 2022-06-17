@@ -699,9 +699,10 @@ footer {
     height: 1.7vw;
     background-color: rgb(0, 0, 0);
     z-index: 1;
-    box-shadow: 0px 0px 0px 5px black;
     user-select: none;
     padding-bottom: 5px;
+    margin: 0;
+    padding-bottom: 1vw;
 }
 
 footer img {
@@ -751,7 +752,7 @@ footer #contacts p{
 .nav {
     position: fixed;
     right: 1vw;
-    bottom: 15vw;
+    bottom: 1vw;
     width: 3vw;
     z-index: 3;
 }
