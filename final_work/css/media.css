@@ -159,6 +159,9 @@
     .mobile{
         display: flex;
     }
+    .mobile a{
+        width: 24.5%;
+    }
     main{
         width: 95%;
     }

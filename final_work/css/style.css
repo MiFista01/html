@@ -762,7 +762,6 @@ footer #contacts p{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -773,8 +772,9 @@ footer #contacts p{
     display: none;
 }
 .mobile a{
-    width: 24.5%;
-    border-left: 2px solid rgba(245, 245, 245, 0.39);
+    width: 25%;
+    border-right: 1px solid rgba(245, 245, 245, 0.39);
+    border-left: 1px solid rgba(245, 245, 245, 0.39);
 }
 .mobile div{
     display: flex;
@@ -785,11 +785,11 @@ footer #contacts p{
     width: 100%;
 }
 .mobile img{
-    width: 40%;
+    width: 35%;
 }
 .mobile h2{
     color: whitesmoke;
-    font-size: 2.5vw;
+    font-size: 2vw;
     margin: 0;
     padding: 0;
 }
