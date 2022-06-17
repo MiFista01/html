@@ -744,7 +744,7 @@ footer #contacts h3{
 .nav {
     position: fixed;
     right: 1vw;
-    bottom: 1vw;
+    bottom: 9vw;
     width: 3vw;
     z-index: 3;
 }
