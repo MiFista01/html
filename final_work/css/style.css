@@ -772,7 +772,7 @@ footer #contacts p{
     display: none;
 }
 .mobile a{
-    width: 10%;
+    width: 25%;
     border-right: 1px solid rgba(245, 245, 245, 0.39);
     border-left: 1px solid rgba(245, 245, 245, 0.39);
 }
@@ -781,7 +781,6 @@ footer #contacts p{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     width: 100%;
 }
 .mobile img{
