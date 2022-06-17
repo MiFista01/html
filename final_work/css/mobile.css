@@ -128,7 +128,7 @@
         bottom: 15vw;
     }
 }
-@media (max-width: 3845px), (orientation: landscape){
+@media (max-width: 3845px) and (orientation: landscape){
     .wrapper{
         background-image: url(../img/food/food2.jpeg);
         height: auto;
@@ -148,6 +148,7 @@
         left: 0.1vw;
         margin-bottom: 100px;
     }
+
     .delivery .input_array input {
         height: 4vw;
         font-size: 3vw;
@@ -189,6 +190,13 @@
     }
     .mobile{
         display: flex;
+        height: 7vw;
+    }
+    .mobile img{
+        width: 20%;
+    }
+    .mobile h2{
+        font-size: 1vw;
     }
     main{
         width: 95%;
@@ -251,7 +259,7 @@
         margin-bottom: 10px;
     }
     .nav {
-        width: 6vw;
-        bottom: 15vw;
+        width: 5vw;
+        bottom: 7vw;
     }
 }
